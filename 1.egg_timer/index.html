@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>1.egg_timer</title>
+  </head>
+  <body>
+    <main id="app">
+      <img class="img-egg" src="src/img/img_egg_timer.png" />
+      <article>
+        <div class="container-title">
+          <h1 class="title-main">맛있는 달걀 삶기</h1>
+          <h2 class="title-sub">나만의 요리 비법, 달걀 타이머</h2>
+        </div>
+        <div class="container-button">
+          <button class="button-small button-halfBoiled">반숙</button>
+          <button class="button-small button-fullyBoiled">완숙</button>
+        </div>
+        <div class="container-time">
+          <div class="box-time">
+            <p id="minute" class="text-time">00</p>
+            <p class="text-time-info">MINUTE</p>
+          </div>
+          <span class="text-time">:</span>
+          <div class="box-time">
+            <p id="second" class="text-time">00</p>
+            <p class="text-time-info">SECONDS</p>
+          </div>
+        </div>
+        <div class="container-timer">
+          <button class="button-large button-reset">초기화</button>
+          <button class="button-large button-start">시작</button>
+        </div>
+      </article>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #6f8a6b;
+}
+.img-egg {
+  width: 518px;
+  height: 524px;
+  margin-right: 100px;
+}
+
+/* title */
+.container-title {
+  margin-bottom: 34px;
+}
+.title-main {
+  margin-bottom: 15px;
+  font-size: 60px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: -3.6px;
+}
+.title-sub {
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+/* timer */
+.button-small {
+  border: 0;
+  width: 235px;
+  height: 55px;
+  background-color: #325334;
+  font-size: 20px;
+  letter-spacing: -0.8;
+  color: white;
+  cursor: pointer;
+}
+.button-small:hover {
+  opacity: 0.7;
+}
+.container-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 31px 0;
+}
+.box-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 180px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.text-time {
+  font-size: 80px;
+  font-weight: 500;
+  color: white;
+}
+.text-time-info {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.container-timer {
+  display: flex;
+  justify-content: space-between;
+}
+.button-large {
+  width: 235px;
+  height: 110px;
+  border-color: white;
+  border-width: 0;
+  font-size: 20px;
+  color: white;
+  background-color: #325334;
+  cursor: pointer;
+}
+.button-large:hover {
+  opacity: 0.7;
+}
