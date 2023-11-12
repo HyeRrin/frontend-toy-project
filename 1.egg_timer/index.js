@@ -1,7 +1,7 @@
-const $button_halfBoiled = document.querySelector(".button-halfBoiled");
-const $button_fullyBoiled = document.querySelector(".button-fullyBoiled");
-const $button_start = document.querySelector(".button-start");
-const $button_reset = document.querySelector(".button-reset");
+const $button_halfBoiled = document.querySelector("#halfBoiled");
+const $button_fullyBoiled = document.querySelector("#fullyBoiled");
+const $button_start = document.querySelector("#start");
+const $button_reset = document.querySelector("#reset");
 const $minute = document.querySelector("#minute");
 const $second = document.querySelector("#second");
 
