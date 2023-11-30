@@ -53,7 +53,7 @@ const onClickStartBtn = () => {
         clearInterval(eggTimer);
       }
     }, 1000);
-  } else if ($button_start.innerText === "중지") {
+  } else {
     $button_start.innerText = "시작";
     $button_start.style.backgroundColor = BUTTON_GREEN;
     clearInterval(eggTimer);
