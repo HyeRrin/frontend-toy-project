@@ -1,36 +1,125 @@
 @font-face {
-  font-family: "GmarketSansMedium";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
-    format("woff");
+  font-family: "LOTTERIADDAG";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIADDAG.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 #app {
   display: flex;
   justify-content: center;
   height: 100vh;
-  background-color: #5b3d2d;
-  font-family: GmarketSansMedium;
+  background: linear-gradient(180deg, #fbcdf1 0%, #fff 100%);
 }
 
+/* 헤더 */
 .header {
-  display: flex;
-}
-
-.img-emoji-cute {
-  width: 124px;
-  height: 112px;
+  position: relative;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  font-family: "LOTTERIADDAG";
 }
 
 .title-main {
-  font-size: 40px;
-  font-weight: 700;
-  color: #ea899a;
-  letter-spacing: -2.4px;
+  margin-bottom: 20px;
+  font-size: 60px;
+  color: #8d46ae;
 }
 
 .title-sub {
-  font-size: 32px;
-  font-weight: 500;
-  color: #e9e9e9;
-  letter-spacing: -1.28px;
+  font-size: 48px;
+  color: #ff99c1;
+}
+
+.deco-question {
+  position: absolute;
+  top: -30px;
+  right: -60px;
+  transform: rotate(5deg);
+  animation: slope 2s infinite;
+  font-size: 80px;
+  color: #ff99c1;
+}
+
+@keyframes slope {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+/* 디데이 입력 카드 */
+.container-input {
+  padding: 60px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+/* .deco-heart-pink-big {
+  position: absolute;
+  top: 0;
+  left: -300px;
+  width: 309px;
+  height: 241px;
+  background-image: url(../src/img/heart_pink_big.png);
+  background-size: cover;
+  background-position: center center;
+  transform: rotate(-13deg);
+} */
+
+.box-input-big {
+  margin-bottom: 44px;
+}
+
+.input-title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-family: "LOTTERIADDAG";
+  color: #ff99c1;
+}
+
+.input {
+  height: 65px;
+  padding: 0 20px;
+  border-radius: 10px;
+  border: 1px solid #b1b1b1;
+  font-size: 20px;
+  color: #b1b1b1;
+}
+
+.input:focus {
+  border: none;
+  outline: 2px solid #ff99c1;
+}
+
+.wrapper-input-small {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.button-calc {
+  width: 100%;
+  padding: 17px 0;
+  border-radius: 20px;
+  border: none;
+  background-color: #ff99c1;
+  font-size: 24px;
+  font-family: "LOTTERIADDAG";
+  color: #fff;
+  cursor: pointer;
+}
+.button-calc:hover {
+  background-color: #8d46ae;
+}
+
+.container-result {
+  background-color: #8d46ae;
 }
