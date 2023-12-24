@@ -22,6 +22,7 @@
             <p class="input-title">처음 만난 날</p>
             <input
               type="date"
+              id="input-date"
               class="input"
               data-placeholder="날짜 선택"
               required
@@ -31,11 +32,21 @@
           <div class="wrapper-input small">
             <div>
               <p class="input-title">내 이름</p>
-              <input type="text" class="input small" placeholder="김사과" />
+              <input
+                type="text"
+                id="input-name-me"
+                class="input small"
+                placeholder="김사과"
+              />
             </div>
             <div>
               <p class="input-title">짝꿍 이름</p>
-              <input type="text" class="input small" placeholder="박포도" />
+              <input
+                type="text"
+                id="input-name-partner"
+                class="input small"
+                placeholder="박포도"
+              />
             </div>
           </div>
           <button type="button" class="button-calc">계산하기</button>
@@ -45,7 +56,7 @@
           <div class="container-emoji">
             <div class="box-emoji">
               <img src="src/img/Emoji_lovely.png" class="img-emoji" />
-              <span class="name-emoji">김사과</span>
+              <span class="name-emoji" id="result-name-me"></span>
             </div>
             <img
               src="src/img/deco_heart_pink_center.png"
@@ -53,11 +64,20 @@
             />
             <div class="box-emoji">
               <img src="src/img/Emoji_cool.png" class="img-emoji" />
-              <span class="name-emoji">박포도</span>
+              <span class="name-emoji" id="result-name-partner"></span>
             </div>
           </div>
-          <p class="text-date-info">처음 만난<br />2023.10.02 부터</p>
-          <p class="text-date-result">987일째</p>
+          <p class="text-date-info">
+            처음 만난<br /><strong id="result-firstday"></strong> 부터
+          </p>
+          <p class="text-date-result">
+            <strong id="result-dday"></strong> 일째
+          </p>
+          <img
+            src="src/img/btn_refresh.png"
+            class="img-refresh"
+            id="btn-refresh"
+          />
         </div>
       </div>
       <!-- 하트 계산기 이미지 -->
