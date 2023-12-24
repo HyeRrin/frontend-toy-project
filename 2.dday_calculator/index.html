@@ -11,13 +11,14 @@
   <body>
     <main id="app">
       <div>
-        <!-- 헤더 타이틀 -->
-        <div class="header">
-          <p class="title-main">우리 만난지 며칠</p>
-          <p class="title-sub">커플 디데이 계산기</p>
-        </div>
+        <!-- 타이틀 -->
+        <header class="header">
+          <h1 class="title-main">우리 만난지 며칠</h1>
+          <h2 class="title-sub">커플 디데이 계산기</h2>
+        </header>
+
         <!-- 디데이 입력 카드 -->
-        <div class="container-input">
+        <article class="container-input">
           <div class="wrapper-input">
             <p class="input-title">처음 만난 날</p>
             <input
@@ -26,7 +27,6 @@
               class="input"
               data-placeholder="날짜 선택"
               required
-              aria-required="true"
             />
           </div>
           <div class="wrapper-input small">
@@ -50,9 +50,10 @@
             </div>
           </div>
           <button type="button" class="button-calc">계산하기</button>
-        </div>
+        </article>
+
         <!-- 결과 카드 -->
-        <div class="container-result">
+        <article class="container-result">
           <div class="container-emoji">
             <div class="box-emoji">
               <img src="src/img/Emoji_lovely.png" class="img-emoji" />
@@ -78,8 +79,9 @@
             class="img-refresh"
             id="btn-refresh"
           />
-        </div>
+        </article>
       </div>
+
       <!-- 하트 계산기 이미지 -->
       <img src="src/img/deco_calculator.png" class="deco-calculator" />
     </main>
