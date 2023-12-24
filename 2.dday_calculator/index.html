@@ -19,19 +19,17 @@
 
         <!-- 디데이 입력 카드 -->
         <article class="container-input">
+          <label for="input-date" class="input-title">처음 만난 날</label>
+          <input
+            type="date"
+            id="input-date"
+            class="input"
+            data-placeholder="날짜 선택"
+            required
+          />
           <div class="wrapper-input">
-            <p class="input-title">처음 만난 날</p>
-            <input
-              type="date"
-              id="input-date"
-              class="input"
-              data-placeholder="날짜 선택"
-              required
-            />
-          </div>
-          <div class="wrapper-input small">
             <div>
-              <p class="input-title">내 이름</p>
+              <label for="input-name-me" class="input-title">내 이름</label>
               <input
                 type="text"
                 id="input-name-me"
@@ -40,7 +38,9 @@
               />
             </div>
             <div>
-              <p class="input-title">짝꿍 이름</p>
+              <label for="input-name-partner" class="input-title"
+                >짝꿍 이름</label
+              >
               <input
                 type="text"
                 id="input-name-partner"
