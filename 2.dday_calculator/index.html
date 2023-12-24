@@ -10,45 +10,59 @@
   </head>
   <body>
     <main id="app">
-      <div />
-      <div class="header">
-        <p class="title-main">우리 만난지 며칠 됐 ~ 게</p>
-        <span class="deco-question">?</span>
-        <p class="title-sub">커플 디데이 계산기</p>
-      </div>
-
-      <div class="container-input">
-        <div class="box-input-big">
-          <p class="input-title">처음 만난 날</p>
-          <input type="date" class="input" />
+      <div>
+        <!-- 헤더 타이틀 -->
+        <div class="header">
+          <p class="title-main">우리 만난지 며칠</p>
+          <p class="title-sub">커플 디데이 계산기</p>
         </div>
-        <div class="wrapper-input-small">
-          <div class="box-input-small">
-            <p class="input-title">내 이름</p>
-            <input type="text" class="input" />
+        <!-- 디데이 입력 카드 -->
+        <div class="container-input">
+          <div class="wrapper-input">
+            <p class="input-title">처음 만난 날</p>
+            <input
+              type="date"
+              class="input"
+              data-placeholder="날짜 선택"
+              required
+              aria-required="true"
+            />
           </div>
-          <div class="box-input-small">
-            <p class="input-title">짝꿍 이름</p>
-            <input type="text" class="input" />
+          <div class="wrapper-input small">
+            <div>
+              <p class="input-title">내 이름</p>
+              <input type="text" class="input small" placeholder="김사과" />
+            </div>
+            <div>
+              <p class="input-title">짝꿍 이름</p>
+              <input type="text" class="input small" placeholder="박포도" />
+            </div>
           </div>
+          <button type="button" class="button-calc">계산하기</button>
         </div>
-        <button type="button" class="button-calc">계산하기</button>
-        <!-- <div class="deco-heart-pink-big" /> -->
+        <!-- 결과 카드 -->
+        <div class="container-result">
+          <div class="container-emoji">
+            <div class="box-emoji">
+              <img src="src/img/Emoji_lovely.png" class="img-emoji" />
+              <span class="name-emoji">김사과</span>
+            </div>
+            <img
+              src="src/img/deco_heart_pink_center.png"
+              class="deco-heart-mini"
+            />
+            <div class="box-emoji">
+              <img src="src/img/Emoji_cool.png" class="img-emoji" />
+              <span class="name-emoji">박포도</span>
+            </div>
+          </div>
+          <p class="text-date-info">처음 만난<br />2023.10.02 부터</p>
+          <p class="text-date-result">987일째</p>
+        </div>
       </div>
-
-      <div class="container-result">
-        <div>
-          <img src="src/img/Emoji_lovely.png" />
-          <span>김사과</span>
-        </div>
-        <div>
-          <img src="src/img/Emoji_cool.png" />
-          <span>박포도</span>
-        </div>
-        <p>처음 만난 2023.10.02 부터</p>
-        <p>987일째</p>
-      </div>
-      <div />
+      <!-- 하트 계산기 이미지 -->
+      <img src="src/img/deco_calculator.png" class="deco-calculator" />
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
