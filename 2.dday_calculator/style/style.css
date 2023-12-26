@@ -18,7 +18,6 @@
 
 /* 타이틀 */
 .header {
-  width: 100%;
   margin: 0 auto 80px;
 }
 
@@ -35,7 +34,6 @@
   position: absolute;
   top: -15px;
   right: -55px;
-  transform: rotate(5deg);
   animation: rolypoly 2s infinite;
   font-size: 70px;
   color: #ff99c1;
@@ -48,13 +46,13 @@
 
 @keyframes rolypoly {
   0% {
-    transform: rotate(5deg);
+    transform: rotate(0deg);
   }
   50% {
     transform: rotate(30deg);
   }
   100% {
-    transform: rotate(5deg);
+    transform: rotate(0deg);
   }
 }
 
