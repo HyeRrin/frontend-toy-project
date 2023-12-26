@@ -26,7 +26,7 @@ const calculateDate = () => {
     $result_dday.innerText = Math.round((today - inputDay) / day);
 
     $input_container.style.display = "none";
-    $result_container.style.display = "flex";
+    $result_container.style.display = "block";
 
     $result_name_me.innerText = $input_name_me.value;
     $result_name_partner.innerText = $input_name_partner.value;
@@ -35,7 +35,7 @@ const calculateDate = () => {
 };
 
 const refreshDate = () => {
-  $input_container.style.display = "flex";
+  $input_container.style.display = "block";
   $result_container.style.display = "none";
 
   $input_name_me.value = "";

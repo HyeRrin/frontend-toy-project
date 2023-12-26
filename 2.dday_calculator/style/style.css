@@ -34,7 +34,10 @@
   position: absolute;
   top: -15px;
   right: -55px;
-  animation: rolypoly 2s infinite;
+  /* animation: rolypoly 2s infinite; */
+  animation-name: rolypoly;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
   font-size: 70px;
   color: #ff99c1;
 }
@@ -58,12 +61,8 @@
 
 /* 디데이 입력 카드 */
 .container-input {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin: 0 auto;
+  width: 500px;
   padding: 60px;
-  min-width: 500px;
   margin-right: 70px;
   border-radius: 20px;
   background-color: white;
@@ -75,7 +74,7 @@
   justify-content: space-between;
 }
 
-.input-title {
+.label {
   display: block;
   margin-bottom: 10px;
   font-size: 24px;
@@ -134,14 +133,11 @@ input[type="date"]:valid::before {
 
 /* 결과 카드 */
 .container-result {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: relative;
-  margin: 0 auto;
+  display: none;
+  text-align: center;
   margin-right: 70px;
-  min-width: 500px;
+  width: 500px;
   padding: 60px;
   border-radius: 20px;
   background-color: #8d46ae;
@@ -149,6 +145,7 @@ input[type="date"]:valid::before {
 
 .container-emoji {
   display: flex;
+  justify-content: center;
   align-items: flex-end;
 }
 
@@ -158,7 +155,7 @@ input[type="date"]:valid::before {
 }
 
 .img-emoji {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   width: 90px;
 }
 
@@ -172,7 +169,7 @@ input[type="date"]:valid::before {
 }
 
 .text-date-info {
-  margin: 30px 0;
+  margin: 40px 0;
   text-align: center;
   font-size: 24px;
   line-height: 35px;
