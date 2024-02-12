@@ -1,7 +1,10 @@
 // 맨 위로 이동 버튼
-let moveToTop = function () {
+const $btnToTop = document.querySelector(".button-totop");
+const moveToTop = () => {
   document.body.scrollIntoView({ behavior: "smooth" });
 };
+
+$btnToTop.addEventListener("click", moveToTop);
 
 // 타이핑 효과
 const $txt = document.querySelector(".subtitle-intro");
@@ -27,9 +30,9 @@ let typing = function () {
 let imgIndex = 0;
 let position = 0;
 const IMG_WIDTH = 438;
-const $btnPrev = document.querySelector(".btn-prev");
-const $btnNext = document.querySelector(".btn-next");
-const $slideImgs = document.querySelector(".slide-images");
+const $btnPrev = document.querySelector(".button-carousel-prev");
+const $btnNext = document.querySelector(".button-carousel-next");
+const $slideImgs = document.querySelector(".container-carousel-img ");
 
 let prev = function () {
   if (imgIndex > 0) {
@@ -65,9 +68,9 @@ let init = function () {
 init();
 
 // 모달
-const $modalBg = document.getElementsByClassName("modal-background");
-const $btnOpen = document.getElementsByClassName("btn-open");
-const $btnClose = document.getElementsByClassName("btn-close");
+const $modalBg = document.getElementsByClassName("container-modal");
+const $btnOpen = document.getElementsByClassName("button-about");
+const $btnClose = document.getElementsByClassName("button-about-close");
 
 function modal(num) {
   $btnOpen[num].addEventListener("click", () => {
@@ -86,7 +89,7 @@ for (let i = 0; i < $btnOpen.length; i++) {
 
 // 스크롤바
 let scrollTop = 0;
-let bar = document.getElementsByClassName("bar-ing")[0];
+let bar = document.getElementsByClassName("progressbar")[0];
 
 window.addEventListener(
   "scroll",

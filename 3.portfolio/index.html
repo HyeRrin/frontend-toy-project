@@ -8,77 +8,78 @@
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/style.css" />
   </head>
-  <body>
-    <main id="app">
-      <!-- Intro 섹션 -->
-      <section class="section-intro">
-        <header id="header">
-          <div class="wrapper-header">
-            <h1 class="title-header">Portfolio.</h1>
-            <nav>
-              <ul class="nav-list">
-                <li><a href="#intro" class="list-link">Intro</a></li>
-                <li><a href="#about" class="list-link">About</a></li>
-                <li><a href="#project" class="list-link">Project</a></li>
-                <li><a href="#skills" class="list-link">Skills</a></li>
-                <li><a href="#contact" class="list-link">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="bar-bg">
-            <span class="bar-ing"></span>
-          </div>
-        </header>
 
-        <a name="intro"></a>
-        <div class="container-intro">
-          <div>
-            <p class="subtitle-intro">안녕하세요 👋</p>
-            <p class="title-intro">
-              개발꿈나무
-              <span class="title-highlight">주혜린</span>입니다.
-            </p>
-            <p class="detail-intro">
-              아름다운 화면과 유연한 사용자 경험을 중요시하는<br />밝고 긍정적인
-              성격의 프론트엔드 개발자입니다.
-            </p>
-            <a
-              class="link-blog-intro"
-              href="https://velog.io/@hye_rin/posts"
-              target="_blank"
-              >Tech Blog</a
-            >
-          </div>
-          <div class="img-intro-wrapper">
-            <img src="src/img/icon_person_big.png" class="img-intro" />
-          </div>
+  <body>
+    <!-- header -->
+    <header id="header">
+      <div class="container-header">
+        <h1 class="title-header">Portfolio.</h1>
+        <nav>
+          <ul class="container-navigation">
+            <li><a href="#intro" class="list-navigation">Intro</a></li>
+            <li><a href="#about" class="list-navigation">About</a></li>
+            <li><a href="#project" class="list-navigation">Project</a></li>
+            <li><a href="#skills" class="list-navigation">Skills</a></li>
+            <li><a href="#contact" class="list-navigation">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrapper-progressbar">
+        <span class="progressbar"></span>
+      </div>
+    </header>
+
+    <main>
+      <!-- intro 섹션 -->
+      <a name="intro"></a>
+      <section class="section-intro">
+        <div>
+          <p class="subtitle-intro">안녕하세요 👋</p>
+          <p class="title-intro">
+            개발꿈나무
+            <span class="title-highlight">주혜린</span>
+            입니다.
+          </p>
+          <p class="detail-intro">
+            아름다운 화면과 유연한 사용자 경험을 중요시하는
+            <br />
+            밝고 긍정적인 성격의 프론트엔드 개발자입니다.
+          </p>
+          <a
+            class="link-blog-intro"
+            href="https://velog.io/@hye_rin/posts"
+            target="_blank"
+          >
+            Tech Blog
+          </a>
+        </div>
+        <div class="wrapper-img-intro">
+          <img src="src/img/icon_person_big.png" class="img-intro" />
         </div>
       </section>
 
-      <!-- About 섹션 -->
+      <!-- about 섹션 -->
       <section class="section-about">
         <a name="about"></a>
         <h2 class="section-title">
           <span class="title-highlight">About</span> Me
         </h2>
-        <div class="cont-about">
-          <div class="slide-container">
-            <div class="slide-album">
-              <div class="slide-images">
-                <img src="src/img/profile-1.jpg" alt="프로필 사진" />
-                <img src="src/img/profile-2.jpg" alt="프로필 사진" />
-                <img src="src/img/profile-3.jpg" alt="프로필 사진" />
-                <img src="src/img/profile-4.jpg" alt="프로필 사진" />
-                <img src="src/img/profile-5.jpg" alt="프로필 사진" />
-              </div>
-              <button class="btn-next">></button>
-              <button class="btn-prev"><</button>
+        <div class="container-about">
+          <div class="container-carousel">
+            <div class="container-carousel-img">
+              <img src="src/img/carousel/carousel_1.jpg" alt="프로필 사진" />
+              <img src="src/img/carousel/carousel_2.jpg" alt="프로필 사진" />
+              <img src="src/img/carousel/carousel_3.jpg" alt="프로필 사진" />
+              <img src="src/img/carousel/carousel_4.jpg" alt="프로필 사진" />
+              <img src="src/img/carousel/carousel_5.jpg" alt="프로필 사진" />
             </div>
+            <button class="button-carousel-next">></button>
+            <button class="button-carousel-prev"><</button>
           </div>
-          <div class="info-about">
+          <div>
             <h3 class="title-about">디자인하는 개발자, 주혜린</h3>
             <p class="detail-about">Front-end Developer</p>
-            <dl class="txt-about">
+            <dl class="definition-about">
               <div>
                 <dt>이름</dt>
                 <dd>주혜린</dd>
@@ -96,13 +97,13 @@
                 <dd>00대학교/00학과</dd>
               </div>
             </dl>
-            <div class="btn-about">
-              <button class="btn-open" type="button">
-                <img src="src/img/icon_heart.png" alt="" />
+            <div class="container-button-about">
+              <button class="button-about" type="button">
+                <img src="src/img/icon_heart.png" alt="하트 아이콘" />
                 <span>Hobby</span>
               </button>
-              <button class="btn-open" type="button">
-                <img src="src/img/icon_person.png" alt="" />
+              <button class="button-about" type="button">
+                <img src="src/img/icon_person.png" alt="사람 아이콘" />
                 <span>Personality</span>
               </button>
             </div>
@@ -110,14 +111,53 @@
         </div>
       </section>
 
-      <section class="section-project">
-        <a name="project"></a>
+      <!-- about 섹션 모달 -->
+      <div class="container-modal">
+        <div class="content-modal">
+          <img
+            class="img-modal"
+            src="src/img/modal_hobby.jpeg"
+            alt="수영 이미지"
+          />
+          <div>
+            <h3 class="title-modal">Hobby</h3>
+            <h4 class="subtitle-modal">#새벽수영</h4>
+            <p class="detail-modal">
+              출근하기 전, 수영하는게 취미에요.<br />수영으로 하루를 시작하는 것
+              만큼<br />개운하고 기분 좋은 일이 없어요.
+            </p>
+            <button type="button" class="button-about-close">닫기</button>
+          </div>
+        </div>
+      </div>
+      <div class="container-modal">
+        <div class="content-modal">
+          <img
+            class="img-modal"
+            src="src/img/modal_personality.jpeg"
+            alt="책상 이미지"
+          />
+          <div>
+            <h3 class="title-modal">Personality</h3>
+            <h4 class="subtitle-modal">#꼼꼼함 #책임감</h4>
+            <p class="detail-modal">
+              꼼꼼해서 작은 빈틈도 쉽게 넘어가지 않아요.<br />그리고 책임감이
+              강해서 한 번 맡은 일은<br />끝까지 해낸다는 장점이 있어요.
+            </p>
+            <button type="button" class="button-about-close">닫기</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- project 섹션 -->
+      <a name="project"></a>
+      <section>
         <h2 class="section-title">
           My <span class="title-highlight">Project</span>
         </h2>
-        <div class="wrapper-project">
-          <!-- 첫번째 프로젝트 -->
-          <article class="box-project">
+        <div class="container-project">
+          <!-- project (1) -->
+          <article class="card-project">
             <p class="date-project">2024.01</p>
             <h3 class="title-project">커플 디데이 계산기</h3>
             <img
@@ -125,15 +165,13 @@
               src="src/img/project-1.png"
               alt="첫번째 프로젝트 이미지"
             />
-            <span class="skill-project html-project">HTML</span>
-            <span class="skill-project css-project">CSS</span>
-            <span class="skill-project js-project">JavaScript</span>
-            <p class="detail-project">
-              반숙, 완숙에 따른 타이머를 설정할 수 있음
-            </p>
+            <span class="text-skill html">HTML</span>
+            <span class="text-skill css">CSS</span>
+            <span class="text-skill js">JavaScript</span>
+            <p>반숙, 완숙에 따른 타이머를 설정할 수 있음</p>
           </article>
-          <!-- 두번째 프로젝트 -->
-          <article class="box-project">
+          <!-- project (2) -->
+          <article class="card-project">
             <p class="date-project">2024.01</p>
             <h3 class="title-project">달걀 타이머</h3>
             <img
@@ -141,23 +179,23 @@
               src="src/img/project-2.png"
               alt="두번째 프로젝트 이미지"
             />
-            <span class="skill-project html-project">HTML</span>
-            <span class="skill-project css-project">CSS</span>
-            <span class="skill-project js-project">JavaScript</span>
-            <p class="detail-project">
-              반숙, 완숙에 따른 타이머를 설정할 수 있음
-            </p>
+            <span class="text-skill html">HTML</span>
+            <span class="text-skill css">CSS</span>
+            <span class="text-skill js">JavaScript</span>
+            <p>반숙, 완숙에 따른 타이머를 설정할 수 있음</p>
           </article>
         </div>
       </section>
 
+      <!-- skills 섹션 -->
+      <a name="skills"></a>
       <section class="section-skills">
-        <a name="skills"></a>
         <h2 class="section-title">
-          My <span class="title-highlight">Skills</span>
+          My
+          <span class="title-highlight">Skills</span>
         </h2>
-        <div class="wrapper-skills">
-          <article class="box-skills html">
+        <div class="container-skills">
+          <article class="card-skills html">
             <img src="src/img/icon_HTML5.png" class="img-skills" />
             <h3 class="title-skills">HTML</h3>
             <p class="detail-skills">
@@ -165,7 +203,7 @@
               엔진 최적화를 위해 노력합니다.
             </p>
           </article>
-          <article class="box-skills css">
+          <article class="card-skills css">
             <img src="src/img/icon_CSS.png" class="img-skills" />
             <h3 class="title-skills">CSS</h3>
             <p class="detail-skills">
@@ -173,7 +211,7 @@
               엔진 최적화를 위해 노력합니다.
             </p>
           </article>
-          <article class="box-skills js">
+          <article class="card-skills js">
             <img src="src/img/icon_JS.png" class="img-skills" />
             <h3 class="title-skills">JavaScript</h3>
             <p class="detail-skills">
@@ -184,88 +222,50 @@
         </div>
       </section>
 
+      <!-- footer -->
+      <a name="contact"></a>
       <footer id="footer">
-        <a name="contact"></a>
         <div class="box-footer">
           <h2 class="section-title">
             <span class="title-highlight">Contact</span> Me
           </h2>
-          <ul class="link-sns">
-            <li>
-              <a
-                href="https://github.com/HyeRrin"
-                class="wrapper-contact"
-                target="_blank"
-              >
+          <ul>
+            <li class="list-contact">
+              <a href="https://github.com/HyeRrin" target="_blank">
                 <img
                   class="img-contact"
                   src="src/img/icon_github.png"
                   alt="깃허브 주소"
                 />
-                <span class="label-sns">GITHUB</span>
+                <span class="label-contact">GITHUB</span>
               </a>
             </li>
-            <li>
-              <a
-                href="https://velog.io/@hye_rin"
-                class="wrapper-contact"
-                target="_blank"
-              >
+            <li class="list-contact">
+              <a href="https://velog.io/@hye_rin" target="_blank">
                 <img
                   class="img-contact"
                   src="src/img/icon_mail.png"
                   alt="이메일 주소"
                 />
-                <span class="label-sns">GMAIL</span>
+                <span class="label-contact">GMAIL</span>
               </a>
             </li>
-            <li>
-              <a
-                href="https://velog.io/@hye_rin"
-                class="wrapper-contact"
-                target="_blank"
-              >
+            <li class="list-contact">
+              <a href="https://velog.io/@hye_rin" target="_blank">
                 <img
                   class="img-contact"
                   src="src/img/icon_blog.png"
                   alt="블로그 주소"
                 />
-                <span class="label-sns">BLOG</span>
+                <span class="label-contact">BLOG</span>
               </a>
             </li>
           </ul>
-          <p class="deco-footer">© JooHyeRin</p>
+          <p class="copyright">© JooHyeRin</p>
         </div>
       </footer>
-      <div class="modal-background">
-        <div class="modal">
-          <img src="src/img/modal_hobby.jpeg" alt="수영 이미지" />
-          <div>
-            <h3>Hobby</h3>
-            <h4>#새벽수영</h4>
-            <p>
-              출근하기 전, 수영하는게 취미에요.<br />수영으로 하루를 시작하는 것
-              만큼<br />개운하고 기분 좋은 일이 없어요.
-            </p>
-            <button type="button" class="btn-close">닫기</button>
-          </div>
-        </div>
-      </div>
-      <div class="modal-background">
-        <div class="modal">
-          <img src="src/img/modal_personality.jpeg" alt="책상 이미지" />
-          <div>
-            <h3>Personality</h3>
-            <h4>#꼼꼼함 #책임감</h4>
-            <p>
-              꼼꼼해서 작은 빈틈도 쉽게 넘어가지 않아요.<br />그리고 책임감이
-              강해서 한 번 맡은 일은<br />끝까지 해낸다는 장점이 있어요.
-            </p>
-            <button type="button" class="btn-close">닫기</button>
-          </div>
-        </div>
-      </div>
-      <button onclick="moveToTop()" class="btn-moveTop"></button>
+
+      <button class="button-totop"></button>
       <script src="index.js"></script>
     </main>
   </body>
