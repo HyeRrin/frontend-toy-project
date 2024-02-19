@@ -345,6 +345,7 @@ about 섹션 모달
 .img-modal {
   margin-right: 50px;
   width: 350px;
+  aspect-ratio: 1/1;
 }
 
 .detail-modal {
