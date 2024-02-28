@@ -15,24 +15,24 @@ const calcHeight = () => {
 window.addEventListener("scroll", calcHeight);
 
 // 타이핑 효과
-const $subtitle = document.querySelector(".subtitle-intro");
-const content = `안녕하세요 👋`;
-let contentIndex = 0;
+// const $subtitle = document.querySelector(".subtitle-intro");
+// const content = `안녕하세요 👋`;
+// let contentIndex = 0;
 
-const typingEffect = () => {
-  $subtitle.innerHTML += content[contentIndex];
-  contentIndex++;
+// const typingEffect = () => {
+//   $subtitle.innerHTML += content[contentIndex];
+//   contentIndex++;
 
-  if (content[contentIndex] === "\n") {
-    $subtitle.innerHTML += "<br />";
-    contentIndex++;
-  }
+//   if (content[contentIndex] === "\n") {
+//     $subtitle.innerHTML += "<br />";
+//     contentIndex++;
+//   }
 
-  if (contentIndex > content.length) {
-    $subtitle.textContent = "";
-    contentIndex = 0;
-  }
-};
+//   if (contentIndex > content.length) {
+//     $subtitle.textContent = "";
+//     contentIndex = 0;
+//   }
+// };
 
 // setInterval(typingEffect, 200);
 
@@ -40,9 +40,9 @@ const typingEffect = () => {
 let imgIndex = 0;
 let position = 0;
 const IMG_WIDTH = 438;
-const $btnPrev = document.querySelector(".button-carousel-prev");
-const $btnNext = document.querySelector(".button-carousel-next");
-const $slideImgs = document.querySelector(".container-carousel-img ");
+const $btnPrev = document.querySelector(".carousel-button.prev");
+const $btnNext = document.querySelector(".carousel-button.next");
+const $slideImgs = document.querySelector(".carousel-images");
 
 const prev = () => {
   if (imgIndex > 0) {
@@ -76,9 +76,9 @@ $btnPrev.addEventListener("click", prev);
 $btnNext.addEventListener("click", next);
 
 // 모달
-const $modalBg = document.getElementsByClassName("container-modal");
-const $btnOpen = document.getElementsByClassName("button-about");
-const $btnClose = document.getElementsByClassName("button-about-close");
+const $modalBg = document.getElementsByClassName("modal-container");
+const $btnOpen = document.getElementsByClassName("about-button");
+const $btnClose = document.getElementsByClassName("modal-close-button");
 
 const modal = (num) => {
   $btnOpen[num].addEventListener("click", () => {
