@@ -194,13 +194,13 @@ about 섹션
   width: 50px;
   height: 50px;
   padding: 0;
-  background-color: rgba(256, 256, 256, 0.3);
-  color: #ffffff;
   border: none;
+  background-color: rgba(256, 256, 256, 0.3);
   font-size: 18px;
   font-weight: 600;
+  color: #ffffff;
+  transition: background-color 0.4s;
   cursor: pointer;
-  transition: background-color 0.4s ease-out, color 0.4s ease-out;
 }
 
 .carousel-button.next {
@@ -211,9 +211,9 @@ about 섹션
   left: 0;
 }
 
-.carousel-button:disabled {
+/* .carousel-button:disabled {
   display: none;
-}
+} */
 
 .carousel-button:hover {
   background-color: rgba(256, 256, 256, 0.7);

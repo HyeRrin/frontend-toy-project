@@ -1,99 +1,83 @@
 // 스크롤바
-let scrollTop = 0;
-let progressbar = document.getElementsByClassName("progressbar")[0];
+const progressbar = document.querySelector(".progressbar");
 
 const calcHeight = () => {
-  scrollTop = document.documentElement.scrollTop;
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight;
+  const clientHeight = document.documentElement.clientHeight;
 
-  let percentage = Math.ceil(
-    (scrollTop / (document.body.scrollHeight - window.outerHeight)) * 100
+  const scrolledPercentage = Math.ceil(
+    (scrollTop / (scrollHeight - clientHeight)) * 100
   );
 
-  progressbar.style.width = percentage + "%";
+  progressbar.style.width = `${scrolledPercentage}%`;
 };
 
-window.addEventListener("scroll", calcHeight);
+let scrollAnimationFrame;
 
-// 타이핑 효과
-// const $subtitle = document.querySelector(".subtitle-intro");
-// const content = `안녕하세요 👋`;
-// let contentIndex = 0;
+const handleScrollEvent = () => {
+  window.cancelAnimationFrame(scrollAnimationFrame);
+  scrollAnimationFrame = window.requestAnimationFrame(calcHeight);
+};
 
-// const typingEffect = () => {
-//   $subtitle.innerHTML += content[contentIndex];
-//   contentIndex++;
-
-//   if (content[contentIndex] === "\n") {
-//     $subtitle.innerHTML += "<br />";
-//     contentIndex++;
-//   }
-
-//   if (contentIndex > content.length) {
-//     $subtitle.textContent = "";
-//     contentIndex = 0;
-//   }
-// };
-
-// setInterval(typingEffect, 200);
+window.addEventListener("scroll", handleScrollEvent);
 
 // 이미지 슬라이드
 let imgIndex = 0;
-let position = 0;
 const IMG_WIDTH = 438;
-const $btnPrev = document.querySelector(".carousel-button.prev");
-const $btnNext = document.querySelector(".carousel-button.next");
-const $slideImgs = document.querySelector(".carousel-images");
+const totalImages = 5;
+const prevButton = document.querySelector(".carousel-button.prev");
+const nextButton = document.querySelector(".carousel-button.next");
+const imageAlbum = document.querySelector(".carousel-images");
 
-const prev = () => {
+const updateCarouselPosition = () => {
+  imageAlbum.style.transform = `translateX(${-imgIndex * IMG_WIDTH}px)`;
+  imageAlbum.style.transition = "transform .5s ease-out";
+};
+
+const updateButtonStates = () => {
+  prevButton.disabled = imgIndex === 0;
+  nextButton.disabled = imgIndex === totalImages - 1;
+};
+
+const moveToPrevImage = () => {
   if (imgIndex > 0) {
-    $btnNext.removeAttribute("disabled");
-    position += IMG_WIDTH;
-    $slideImgs.style.transform = `translateX(${position}px)`;
-    imgIndex = imgIndex - 1;
-  }
-
-  if (imgIndex == 0) {
-    $btnPrev.setAttribute("disabled", "true");
+    imgIndex -= 1;
+    updateCarouselPosition();
+    updateButtonStates();
   }
 };
 
-const next = () => {
-  if (imgIndex < 5) {
-    $btnPrev.removeAttribute("disabled");
-    position -= IMG_WIDTH;
-    $slideImgs.style.transform = `translateX(${position}px)`;
-    $slideImgs.style.transition = "transform .5s ease-out";
-    imgIndex = imgIndex + 1;
-  }
-
-  if (imgIndex == 4) {
-    $btnNext.setAttribute("disabled", "true");
+const moveToNextImage = () => {
+  if (imgIndex < totalImages - 1) {
+    imgIndex += 1;
+    updateCarouselPosition();
+    updateButtonStates();
   }
 };
 
-$btnPrev.setAttribute("disabled", "true");
-$btnPrev.addEventListener("click", prev);
-$btnNext.addEventListener("click", next);
+prevButton.addEventListener("click", moveToPrevImage);
+nextButton.addEventListener("click", moveToNextImage);
+
+updateButtonStates();
 
 // 모달
-const $modalBg = document.getElementsByClassName("modal-container");
-const $btnOpen = document.getElementsByClassName("about-button");
-const $btnClose = document.getElementsByClassName("modal-close-button");
+const modalContainers = document.querySelectorAll(".modal-container");
+const openButtons = document.querySelectorAll(".about-button");
+const closeButtons = document.querySelectorAll(".modal-close-button");
 
-const modal = (num) => {
-  $btnOpen[num].addEventListener("click", () => {
-    $modalBg[num].style.display = "flex";
-    document.body.style.overflow = "hidden";
-  });
-  $btnClose[num].addEventListener("click", () => {
-    $modalBg[num].style.display = "none";
-    document.body.style.overflow = "unset";
-  });
+const toggleModal = (index, isOpen) => {
+  modalContainers[index].style.display = isOpen ? "flex" : "none";
+  document.body.style.overflow = isOpen ? "hidden" : "unset";
 };
 
-for (let i = 0; i < $btnOpen.length; i++) {
-  modal(i);
-}
+openButtons.forEach((button, index) => {
+  button.addEventListener("click", () => toggleModal(index, true));
+});
+
+closeButtons.forEach((button, index) => {
+  button.addEventListener("click", () => toggleModal(index, false));
+});
 
 // 맨 위로 이동 버튼
 const $btnToTop = document.querySelector(".button-totop");
