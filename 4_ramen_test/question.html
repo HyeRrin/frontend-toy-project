@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나는 무슨 라면일까?</title>
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <style>
+    .quiz-button-container {
+      width: 100%;
+      text-align: center;
+    }
+
+    .quiz-question-button {
+      width: 70%;
+      margin-bottom: 30px;
+      padding: 25px 0;
+      border: none;
+      border-radius: 100px;
+      background-color: #f85021;
+      font-family: "GmarketBold";
+      font-size: 24px;
+      letter-spacing: -0.6px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .quiz-question-button:hover {
+      background-color: #812000;
+    }
+  </style>
+  <body>
+    <main class="main-content">
+      <article class="quiz-container">
+        <progress class="quiz-progress" value="20" max="100"></progress>
+        <p class="quiz-question">라면을 끓일 때,<br />가장 먼저 넣는 재료는?</p>
+        <img class="quiz-image" src="src/img/ramen.png" alt="라면 이미지" />
+        <div class="quiz-button-container">
+          <button class="quiz-question-button">라면 스프</button>
+          <button class="quiz-question-button">면발</button>
+        </div>
+        <footer>
+          <p class="author-name">HyeRin</p>
+        </footer>
+      </article>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

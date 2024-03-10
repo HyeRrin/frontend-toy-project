@@ -1,0 +1,109 @@
+/* Bold 버전 불러오기 */
+@font-face {
+  font-family: "GmarketBold";
+  src: url("../src/font/GmarketSansTTFBold.ttf") format("truetype");
+}
+
+/* Medium 버전 불러오기 */
+@font-face {
+  font-family: "GmarketMedium";
+  src: url("../src/font/GmarketSansTTFMedium.ttf") format("truetype");
+}
+
+/* 폰트 적용하기 */
+* {
+  font-family: "GmarketMedium";
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8e799;
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  height: 100vh;
+  min-width: 532px;
+  background-color: #ffc15e;
+}
+
+.quiz-progress {
+  margin-top: 30px;
+  border-radius: 2px;
+  width: 60%;
+  height: 14px;
+}
+.quiz-progress::-webkit-progress-bar {
+  background-color: #fbcc88;
+  border-radius: 2px;
+}
+.quiz-progress::-webkit-progress-value {
+  background-color: #f85021;
+  border-radius: 2px;
+}
+
+.quiz-subtitle {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "GmarketBold";
+  font-size: 24px;
+  color: #f85021;
+  letter-spacing: -0.4px;
+}
+.quiz-title {
+  /* margin-top: 30px; */
+  text-align: center;
+  font-family: "GmarketBold";
+  font-size: 48px;
+  color: #812000;
+  letter-spacing: -0.6px;
+}
+
+.highlight {
+  /* margin-bottom: 60px; */
+  display: inline-block;
+  font-size: 64px;
+  line-height: 55px;
+  color: #f85021;
+  transform: rotate(-5deg) translateY(15px);
+}
+
+.quiz-image {
+  width: 264px;
+}
+
+.quiz-start-button {
+  width: 70%;
+  padding: 20px 0;
+  border: none;
+  border-radius: 100px;
+  background-color: #f85021;
+  font-family: "GmarketBold";
+  font-size: 32px;
+  letter-spacing: -0.6px;
+  color: white;
+  cursor: pointer;
+}
+.quiz-start-button:hover {
+  background-color: #812000;
+}
+
+.author-name {
+  font-size: 20px;
+  letter-spacing: -1px;
+  color: #812000;
+}
+
+.quiz-question {
+  text-align: center;
+  font-size: 28px;
+  line-height: 35px;
+  color: #812000;
+  letter-spacing: -0.4px;
+}
