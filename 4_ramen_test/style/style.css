@@ -20,17 +20,19 @@
   flex-direction: column;
   align-items: center;
   background-color: #f8e799;
+  /* height: 100vh; */
 }
 
 .quiz-container {
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   width: 30%;
-  height: 100vh;
-  min-width: 532px;
-  background-color: #ffc15e;
+  /* height: 100vh; */
+  /* min-width: 532px;
+  background-color: #ffc15e; */
 }
 
 .quiz-progress {
@@ -75,23 +77,13 @@
 }
 
 .quiz-image {
-  width: 264px;
+  width: 200px;
 }
 
 .quiz-start-button {
-  width: 70%;
-  padding: 20px 0;
-  border: none;
-  border-radius: 100px;
-  background-color: #f85021;
-  font-family: "GmarketBold";
-  font-size: 32px;
+  font-size: 24px;
   letter-spacing: -0.6px;
-  color: white;
-  cursor: pointer;
-}
-.quiz-start-button:hover {
-  background-color: #812000;
+  color: #f85021;
 }
 
 .author-name {
@@ -106,4 +98,83 @@
   line-height: 35px;
   color: #812000;
   letter-spacing: -0.4px;
+}
+
+.quiz-button-container {
+  width: 100%;
+  text-align: center;
+}
+
+.quiz-question-button {
+  width: 500px;
+  margin-bottom: 30px;
+  padding: 25px 40px;
+  border: none;
+  border-radius: 100px;
+  background-color: #f85021;
+  font-family: "GmarketBold";
+  font-size: 24px;
+  letter-spacing: -0.6px;
+  color: white;
+  cursor: pointer;
+}
+.clicked {
+  background-color: #812000;
+}
+.quiz-question-button:hover {
+  background-color: #812000;
+}
+
+/* 결과 화면 */
+.quiz-result-subtitle {
+  text-align: center;
+}
+
+.quiz-category-title {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: #812000;
+}
+
+.quiz-question-title {
+  font-size: 24px;
+  line-height: 35px;
+  font-family: "GmarketBold";
+  color: #812000;
+  letter-spacing: -0.4px;
+}
+
+.quiz-result-title {
+  font-family: "GmarketBold";
+  font-size: 44px;
+  letter-spacing: -0.6px;
+  color: #f85021;
+}
+
+.quiz-tag-list {
+  text-align: center;
+  width: 60%;
+}
+
+.quiz-tag {
+  display: inline-block;
+  margin-right: 5px;
+  font-family: "GmarketBold";
+  font-size: 24px;
+  line-height: 32px;
+  color: #f85021;
+  letter-spacing: -0.4px;
+}
+
+.quiz-description {
+  width: 70%;
+}
+
+.quiz-description-text {
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: #812000;
 }
