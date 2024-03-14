@@ -15,7 +15,7 @@
           <h3 class="quiz-category-title">성격유형테스트</h3>
           <h2 class="quiz-question-title">나는 무슨 라면일까?</h2>
         </div>
-        <h1 class="quiz-result-title">맵다매워 푸라면🔥</h1>
+        <h1 class="quiz-result-title"></h1>
         <img class="quiz-image" src="src/img/ramen.png" alt="라면 이미지" />
         <ul class="quiz-tag-list">
           <li class="quiz-tag">#매운맛</li>
@@ -46,6 +46,22 @@
       </article>
     </main>
 
-    <script src="index.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const params = new URLSearchParams(window.location.search);
+        const score = parseInt(params.get("score"), 10);
+        const result = document.querySelector(".quiz-result-title");
+
+        if (!isNaN(score)) {
+          if (score <= 2) {
+            result.innerText = "신라면 순한맛 또는 안성탕면";
+          } else if (score <= 3) {
+            result.innerText = "너구리 또는 진라면 중화맛";
+          } else {
+            result.innerText = "불닭볶음면 또는 틈새라면";
+          }
+        }
+      });
+    </script>
   </body>
 </html>

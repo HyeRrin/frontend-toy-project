@@ -18,21 +18,21 @@ const setupQuizEventListeners = () => {
         userAnswers[questionId] = selectedScore;
 
         console.log(`질문 ${questionId}에 대한 새로운 선택: ${selectedScore}`);
-
-        calculateAndShowScore();
       }
     });
   });
 };
 
-const calculateAndShowScore = () => {
+setupQuizEventListeners();
+
+const resultButton = document.querySelector(".result-button");
+
+resultButton.addEventListener("click", () => {
   let totalScore = 0;
 
   for (let questionId in userAnswers) {
     totalScore += userAnswers[questionId];
   }
 
-  console.log(`현재 사용자 점수: ${totalScore}`);
-};
-
-setupQuizEventListeners();
+  location.href = `result.html?score=${totalScore}`;
+});
