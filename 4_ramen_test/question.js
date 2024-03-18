@@ -1,6 +1,5 @@
 const questions = [
   {
-    imgsrc: "/images/q1.png",
     question: "매운 음식을 좋아하나요?",
     options: [
       { id: 1, title: "매운걸 먹어야 스트레스가 풀려!" },
@@ -8,7 +7,6 @@ const questions = [
     ],
   },
   {
-    imgsrc: "/images/q2.png",
     question: "내가 더 선호하는 맛은?",
     options: [
       { id: 1, title: "짭짤하고 강한 맛" },
@@ -16,7 +14,6 @@ const questions = [
     ],
   },
   {
-    imgsrc: "/images/q3.png",
     question: "음식을 선택할 때 더 중요하게 생각하는 것은?",
     options: [
       { id: 1, title: "음식은 일단 맛있고 봐야지!" },
@@ -24,7 +21,6 @@ const questions = [
     ],
   },
   {
-    imgsrc: "/images/q4.png",
     question: "밖에서 저녁을 한끼 사먹어야 한다면?",
     options: [
       { id: 1, title: "내가 항상 가는 단골가게로!" },
@@ -32,7 +28,6 @@ const questions = [
     ],
   },
   {
-    imgsrc: "/images/q5.png",
     question: "해외여행갈 때의 나는?",
     options: [
       { id: 1, title: "혹시 모르니 컵라면 하나는 챙겨가야지" },
@@ -40,7 +35,6 @@ const questions = [
     ],
   },
   {
-    imgsrc: "/images/q6.png",
     question: "맛있는 맛집에 도착했는데 대기시간이 1시간이라면?",
     options: [
       { id: 1, title: "맛있다면 얼마든지 기다릴 수 있지" },

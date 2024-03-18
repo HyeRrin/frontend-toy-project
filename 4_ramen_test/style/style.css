@@ -10,119 +10,95 @@
   src: url("../src/font/GmarketSansTTFMedium.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "LotteriaChab";
+  src: url("../src/font/LotteriaChab.ttf") format("truetype");
+}
+
+#app {
+  background-color: #f5e6cf;
+}
+
 /* 폰트 적용하기 */
 * {
-  font-family: "GmarketMedium";
+  letter-spacing: -0.8px;
 }
 
 .main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f8e799;
-  /* height: 100vh; */
+  height: 100vh;
+  background-color: #f5e6cf;
 }
 
 .quiz-container {
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
-  width: 30%;
-  /* height: 100vh; */
-  /* min-width: 532px;
-  background-color: #ffc15e; */
-}
-
-.quiz-progress {
-  margin-top: 30px;
-  border-radius: 2px;
-  width: 60%;
-  height: 14px;
-}
-.quiz-progress::-webkit-progress-bar {
-  background-color: #fbcc88;
-  border-radius: 2px;
-}
-.quiz-progress::-webkit-progress-value {
-  background-color: #f85021;
-  border-radius: 2px;
+  /* width: 30%; */
 }
 
 .quiz-subtitle {
   margin-bottom: 20px;
   text-align: center;
-  font-family: "GmarketBold";
+  font-family: "LotteriaChab";
   font-size: 24px;
-  color: #f85021;
+  color: #df2b24;
   letter-spacing: -0.4px;
 }
 .quiz-title {
   /* margin-top: 30px; */
   text-align: center;
-  font-family: "GmarketBold";
+  font-family: "LotteriaChab";
   font-size: 48px;
-  color: #812000;
+  color: #df2b24;
   letter-spacing: -0.6px;
 }
 
-.highlight {
-  /* margin-bottom: 60px; */
-  display: inline-block;
-  font-size: 64px;
-  line-height: 55px;
-  color: #f85021;
-  transform: rotate(-5deg) translateY(15px);
-}
-
 .quiz-image {
+  margin: 50px 0;
   width: 200px;
 }
 
 .quiz-start-button {
   font-size: 24px;
-  letter-spacing: -0.6px;
-  color: #f85021;
+  color: #df2b24;
 }
 
-.author-name {
-  font-size: 20px;
-  letter-spacing: -1px;
-  color: #812000;
+.quiz-number {
+  margin-bottom: 30px;
+  font-size: 42px;
+  font-family: "LotteriaChab";
+  color: #df2b24;
 }
 
 .quiz-question {
+  margin-bottom: 40px;
   text-align: center;
   font-size: 28px;
   line-height: 35px;
-  color: #812000;
-  letter-spacing: -0.4px;
-}
-
-.quiz-button-container {
-  width: 100%;
-  text-align: center;
+  font-family: "LotteriaChab";
+  color: #df2b24;
 }
 
 .quiz-question-button {
+  display: block;
   width: 500px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   padding: 25px 40px;
   border: none;
-  border-radius: 100px;
-  background-color: #f85021;
-  font-family: "GmarketBold";
-  font-size: 24px;
-  letter-spacing: -0.6px;
-  color: white;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 20px;
+  color: #241600;
   cursor: pointer;
 }
 .clicked {
-  background-color: #812000;
-}
-.quiz-question-button:hover {
-  background-color: #812000;
+  background-color: #df2b24;
+  color: #fff;
 }
 
 /* 결과 화면 */
