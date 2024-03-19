@@ -28,11 +28,18 @@ setupQuizEventListeners();
 const resultButton = document.querySelector(".result-button");
 
 resultButton.addEventListener("click", () => {
-  let totalScore = 0;
+  const totalQuestions =
+    document.querySelectorAll(".quiz-question-button[data-question]").length /
+    2;
+  const answeredQuestions = Object.keys(userAnswers).length;
 
-  for (let questionId in userAnswers) {
-    totalScore += userAnswers[questionId];
+  if (answeredQuestions < totalQuestions) {
+    alert("모든 질문에 답해야 결과를 볼 수 있습니다.");
+  } else {
+    let totalScore = 0;
+    for (let questionId in userAnswers) {
+      totalScore += userAnswers[questionId];
+    }
+    location.href = `result.html?score=${totalScore}`;
   }
-
-  location.href = `result.html?score=${totalScore}`;
 });

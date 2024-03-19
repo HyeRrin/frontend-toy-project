@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  padding-top: 150px;
   background-color: #f5e6cf;
 }
 
@@ -45,7 +45,7 @@
   margin-bottom: 20px;
   text-align: center;
   font-family: "LotteriaChab";
-  font-size: 24px;
+  font-size: 32px;
   color: #df2b24;
   letter-spacing: -0.4px;
 }
@@ -53,19 +53,22 @@
   /* margin-top: 30px; */
   text-align: center;
   font-family: "LotteriaChab";
-  font-size: 48px;
+  font-size: 60px;
   color: #df2b24;
   letter-spacing: -0.6px;
 }
 
 .quiz-image {
-  margin: 50px 0;
+  margin: 70px 0;
   width: 200px;
 }
 
 .quiz-start-button {
+  margin-bottom: 20px;
   font-size: 24px;
+  font-weight: 500;
   color: #df2b24;
+  letter-spacing: -0.8px;
 }
 
 .quiz-number {
@@ -107,50 +110,71 @@
 }
 
 .quiz-category-title {
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: -0.4px;
-  color: #812000;
-}
-
-.quiz-question-title {
-  font-size: 24px;
-  line-height: 35px;
-  font-family: "GmarketBold";
-  color: #812000;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "LotteriaChab";
+  font-size: 32px;
+  color: #df2b24;
   letter-spacing: -0.4px;
 }
 
 .quiz-result-title {
-  font-family: "GmarketBold";
-  font-size: 44px;
+  font-family: "LotteriaChab";
+  font-size: 60px;
+  line-height: 70px;
   letter-spacing: -0.6px;
-  color: #f85021;
+  color: #df2b24;
+  text-align: center;
 }
 
 .quiz-tag-list {
   text-align: center;
-  width: 60%;
+  width: 30%;
 }
 
 .quiz-tag {
   display: inline-block;
   margin-right: 5px;
-  font-family: "GmarketBold";
-  font-size: 24px;
-  line-height: 32px;
-  color: #f85021;
+  font-family: "LotteriaChab";
+  font-size: 32px;
+  line-height: 40px;
+  color: #df2b24;
   letter-spacing: -0.4px;
 }
 
 .quiz-description {
-  width: 70%;
+  width: 35%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: white;
+  padding: 50px;
 }
 
 .quiz-description-text {
-  margin-bottom: 30px;
   font-size: 20px;
   line-height: 28px;
-  letter-spacing: -0.4px;
-  color: #812000;
+  color: #241600;
+  letter-spacing: -1px;
+}
+
+.result-button {
+  padding: 40px 0;
+  width: 100%;
+  border: none;
+  background-color: #df2b24;
+  font-size: 32px;
+  font-family: "LotteriaChab";
+  color: white;
+  cursor: pointer;
+}
+
+.restart-button {
+  margin: 20px 0 150px;
+  background-color: #241600;
+  color: white;
+  padding: 25px 40px;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 35%;
 }
