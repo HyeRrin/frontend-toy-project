@@ -63,10 +63,14 @@
   width: 200px;
 }
 
+.quiz-icon-arrow {
+  width: 20px;
+}
+
 .quiz-start-button {
   margin-bottom: 20px;
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 00;
   color: #df2b24;
   letter-spacing: -0.8px;
 }
