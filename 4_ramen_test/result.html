@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/style.css" />
   </head>
-  <body>
+  <body id="app">
     <main class="main-content">
       <div class="quiz-result-subtitle">
         <h3 class="quiz-category-title">성격유형테스트</h3>
@@ -16,43 +16,10 @@
       <h1 class="quiz-result-title"></h1>
       <img class="quiz-image" src="src/img/ramen.png" alt="라면 이미지" />
       <div class="quiz-description">
-        <p class="quiz-description-text">
-          지금 하고 싶은 것, 현재의 행복을 중요하게 생각하는 당신! 나를 위해
-          어디든 떠나 새로운 것에 도전할 준비가 되어있어요. 특히 내가 좋아하는
-          일에는 누구보다 열정적인 혁신가에요.<br /><br />
-          지금 하고 싶은 것, 현재의 행복을 중요하게 생각하는 당신! 나를 위해
-          어디든 떠나 새로운 것에 도전할 준비가 되어있어요. 특히 내가 좋아하는
-          일에는 누구보다 열정적인 혁신가에요.<br /><br />
-          지금 하고 싶은 것, 현재의 행복을 중요하게 생각하는 당신! 나를 위해
-          어디든 떠나 새로운 것에 도전할 준비가 되어있어요. 특히 내가 좋아하는
-          일에는 누구보다 열정적인 혁신가에요.
-        </p>
+        <p class="quiz-description-text"></p>
       </div>
       <button class="restart-button">테스트 다시하기</button>
     </main>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const params = new URLSearchParams(window.location.search);
-        const score = parseInt(params.get("score"), 10);
-        const result = document.querySelector(".quiz-result-title");
-
-        if (!isNaN(score)) {
-          if (score <= 2) {
-            result.innerHTML = `#찐라면 순한맛<br />#안상탕면👼🏻`;
-          } else if (score <= 3) {
-            result.innerHTML = `#너굴이<br />#푸라면🔥`;
-          } else {
-            result.innerHTML = `#불닥볶음면<br />#틈쇠라면🌶️`;
-          }
-        }
-      });
-
-      const restartButton = document.querySelector(".restart-button");
-
-      restartButton.addEventListener("click", () => {
-        location.href = `index.html`;
-      });
-    </script>
+    <script src="./result.js" />
   </body>
 </html>

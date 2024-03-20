@@ -10,7 +10,7 @@
   </head>
   <body id="app">
     <main class="main-content">
-      <article class="quiz-container">
+      <section class="quiz-container">
         <header>
           <h2 class="quiz-subtitle">성격유형테스트</h2>
           <h1 class="quiz-title">나는 무슨<br />라면일까?</h1>
@@ -18,78 +18,99 @@
         <img class="quiz-image" src="src/img/ramen.png" alt="라면 이미지" />
         <a class="quiz-start-button">테스트 시작하기</a>
         <img class="quiz-icon-arrow" src="src/img/arrow.png" />
-      </article>
-      <!-- Question.1 -->
-      <article class="quiz-container">
-        <p class="quiz-number">Q.1</p>
-        <p class="quiz-question">매운 음식을 좋아하나요?</p>
-        <button class="quiz-question-button" data-question="1" data-score="1">
-          매운걸 먹어야 스트레스가 풀려!
-        </button>
-        <button class="quiz-question-button" data-question="1" data-score="0">
-          너무 매우면 오히려 스트레스 받아!
-        </button>
-      </article>
-      <!-- Question.2 -->
-      <article class="quiz-container">
-        <p class="quiz-number">Q.2</p>
-        <p class="quiz-question">내가 더 선호하는 맛은?</p>
-        <div class="quiz-button-container">
-          <button class="quiz-question-button" data-question="2" data-score="1">
-            짭짤하고 강한 맛
+      </section>
+
+      <section>
+        <!-- Question.1 -->
+        <div class="quiz-container">
+          <p class="quiz-number">Q.1</p>
+          <p class="quiz-question">매운 음식을 좋아하나요?</p>
+          <button class="quiz-question-button" data-question="1" data-score="1">
+            매운걸 먹어야 스트레스가 풀려!
           </button>
-          <button class="quiz-question-button" data-question="2" data-score="0">
-            담백하고 부드러운 맛
+          <button class="quiz-question-button" data-question="1" data-score="0">
+            너무 매우면 오히려 스트레스 받아!
           </button>
         </div>
-      </article>
-      <!-- Question.3 -->
-      <article class="quiz-container">
-        <p class="quiz-number">Q.3</p>
-        <p class="quiz-question">음식을 선택할 때 더 중요하게 생각하는 것은?</p>
-        <button class="quiz-question-button" data-question="3" data-score="1">
-          음식은 일단 맛있고 봐야지!
-        </button>
-        <button class="quiz-question-button" data-question="3" data-score="0">
-          맛이 없더라도 건강한 음식 먹을래!
-        </button>
-      </article>
-      <!-- Question.4 -->
-      <article class="quiz-container">
-        <p class="quiz-number">Q.4</p>
-        <p class="quiz-question">밖에서 저녁을 한끼 사먹어야 한다면?</p>
-        <button class="quiz-question-button" data-question="4" data-score="1">
-          내가 항상 가는 단골가게로!
-        </button>
-        <button class="quiz-question-button" data-question="4" data-score="0">
-          한번도 안가본 맛집 도전!
-        </button>
-      </article>
-      <!-- Question.5 -->
-      <article class="quiz-container">
-        <p class="quiz-number">Q.5</p>
-        <p class="quiz-question">해외여행갈 때의 나는?</p>
-        <button class="quiz-question-button" data-question="5" data-score="1">
-          혹시 모르니 컵라면 하나는 챙겨가야지
-        </button>
-        <button class="quiz-question-button" data-question="5" data-score="0">
-          입맛에 안맞더라도 현지음식 먹을래
-        </button>
-      </article>
-      <!-- Question.6 -->
-      <article class="quiz-container">
-        <p class="quiz-number">Q.6</p>
-        <p class="quiz-question">
-          맛있는 맛집에 도착했는데 대기시간이<br />1시간이라면?
-        </p>
-        <button class="quiz-question-button" data-question="6" data-score="1">
-          맛있다면 얼마든지 기다릴 수 있지
-        </button>
-        <button class="quiz-question-button" data-question="6" data-score="0">
-          맛은 좀 포기하더라도 빠르게 먹을 수 있는 곳 갈래
-        </button>
-      </article>
-      <button class="result-button">결과 보러가기</button>
+
+        <!-- Question.2 -->
+        <div class="quiz-container">
+          <p class="quiz-number">Q.2</p>
+          <p class="quiz-question">내가 더 선호하는 맛은?</p>
+          <div class="quiz-button-container">
+            <button
+              class="quiz-question-button"
+              data-question="2"
+              data-score="1"
+            >
+              짭짤하고 강한 맛
+            </button>
+            <button
+              class="quiz-question-button"
+              data-question="2"
+              data-score="0"
+            >
+              담백하고 부드러운 맛
+            </button>
+          </div>
+        </div>
+
+        <!-- Question.3 -->
+        <div class="quiz-container">
+          <p class="quiz-number">Q.3</p>
+          <p class="quiz-question">
+            음식을 선택할 때 더 중요하게 생각하는 것은?
+          </p>
+          <button class="quiz-question-button" data-question="3" data-score="1">
+            음식은 일단 맛있고 봐야지!
+          </button>
+          <button class="quiz-question-button" data-question="3" data-score="0">
+            맛이 없더라도 건강한 음식 먹을래!
+          </button>
+        </div>
+
+        <!-- Question.4 -->
+        <div class="quiz-container">
+          <p class="quiz-number">Q.4</p>
+          <p class="quiz-question">밖에서 저녁을 한끼 사먹어야 한다면?</p>
+          <button class="quiz-question-button" data-question="4" data-score="1">
+            내가 항상 가는 단골가게로!
+          </button>
+          <button class="quiz-question-button" data-question="4" data-score="0">
+            한번도 안가본 맛집 도전!
+          </button>
+        </div>
+
+        <!-- Question.5 -->
+        <div class="quiz-container">
+          <p class="quiz-number">Q.5</p>
+          <p class="quiz-question">해외여행갈 때의 나는?</p>
+          <button class="quiz-question-button" data-question="5" data-score="1">
+            혹시 모르니 컵라면 하나는 챙겨가야지
+          </button>
+          <button class="quiz-question-button" data-question="5" data-score="0">
+            입맛에 안맞더라도 현지음식 먹을래
+          </button>
+        </div>
+
+        <!-- Question.6 -->
+        <div class="quiz-container">
+          <p class="quiz-number">Q.6</p>
+          <p class="quiz-question">
+            맛있는 맛집에 도착했는데 대기시간이<br />1시간이라면?
+          </p>
+          <button class="quiz-question-button" data-question="6" data-score="1">
+            맛있다면 얼마든지 기다릴 수 있지
+          </button>
+          <button class="quiz-question-button" data-question="6" data-score="0">
+            맛은 좀 포기하더라도 빠르게 먹을 수 있는 곳 갈래
+          </button>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <button class="result-button">결과 보러가기</button>
+      </footer>
     </main>
 
     <script src="./index.js" />

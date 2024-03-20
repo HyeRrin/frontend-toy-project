@@ -1,13 +1,8 @@
-/* Bold 버전 불러오기 */
-@font-face {
-  font-family: "GmarketBold";
-  src: url("../src/font/GmarketSansTTFBold.ttf") format("truetype");
-}
-
-/* Medium 버전 불러오기 */
-@font-face {
-  font-family: "GmarketMedium";
-  src: url("../src/font/GmarketSansTTFMedium.ttf") format("truetype");
+:root {
+  --primary-color: #df2b24;
+  --background-color: #f5e6cf;
+  --base-color: #241600;
+  --font-family-main: "LotteriaChab", sans-serif;
 }
 
 @font-face {
@@ -15,8 +10,10 @@
   src: url("../src/font/LotteriaChab.ttf") format("truetype");
 }
 
+/* 기본 페이지 배경 설정 */
 #app {
-  background-color: #f5e6cf;
+  background-color: var(--background-color);
+  height: 100vh;
 }
 
 /* 폰트 적용하기 */
@@ -29,32 +26,28 @@
   flex-direction: column;
   align-items: center;
   padding-top: 150px;
-  background-color: #f5e6cf;
 }
 
 .quiz-container {
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
   align-items: center;
-  /* width: 30%; */
 }
 
 .quiz-subtitle {
   margin-bottom: 20px;
   text-align: center;
-  font-family: "LotteriaChab";
+  font-family: var(--font-family-main);
   font-size: 32px;
-  color: #df2b24;
+  color: var(--primary-color);
   letter-spacing: -0.4px;
 }
 .quiz-title {
-  /* margin-top: 30px; */
   text-align: center;
-  font-family: "LotteriaChab";
+  font-family: var(--font-family-main);
   font-size: 60px;
-  color: #df2b24;
+  color: var(--primary-color);
   letter-spacing: -0.6px;
 }
 
@@ -65,21 +58,34 @@
 
 .quiz-icon-arrow {
   width: 20px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .quiz-start-button {
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: 00;
-  color: #df2b24;
+  color: var(--primary-color);
   letter-spacing: -0.8px;
 }
 
 .quiz-number {
   margin-bottom: 30px;
   font-size: 42px;
-  font-family: "LotteriaChab";
-  color: #df2b24;
+  font-family: var(--font-family-main);
+  color: var(--primary-color);
 }
 
 .quiz-question {
@@ -87,8 +93,8 @@
   text-align: center;
   font-size: 28px;
   line-height: 35px;
-  font-family: "LotteriaChab";
-  color: #df2b24;
+  font-family: var(--font-family-main);
+  color: var(--primary-color);
 }
 
 .quiz-question-button {
@@ -100,11 +106,11 @@
   border-radius: 10px;
   background-color: white;
   font-size: 20px;
-  color: #241600;
+  color: var(--base-color);
   cursor: pointer;
 }
 .clicked {
-  background-color: #df2b24;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
@@ -116,18 +122,18 @@
 .quiz-category-title {
   margin-bottom: 20px;
   text-align: center;
-  font-family: "LotteriaChab";
+  font-family: var(--font-family-main);
   font-size: 32px;
-  color: #df2b24;
+  color: var(--primary-color);
   letter-spacing: -0.4px;
 }
 
 .quiz-result-title {
-  font-family: "LotteriaChab";
+  font-family: var(--font-family-main);
   font-size: 60px;
   line-height: 70px;
   letter-spacing: -0.6px;
-  color: #df2b24;
+  color: var(--primary-color);
   text-align: center;
 }
 
@@ -139,10 +145,10 @@
 .quiz-tag {
   display: inline-block;
   margin-right: 5px;
-  font-family: "LotteriaChab";
+  font-family: var(--font-family-main);
   font-size: 32px;
   line-height: 40px;
-  color: #df2b24;
+  color: var(--primary-color);
   letter-spacing: -0.4px;
 }
 
@@ -157,24 +163,28 @@
 .quiz-description-text {
   font-size: 20px;
   line-height: 28px;
-  color: #241600;
+  color: var(--base-color);
   letter-spacing: -1px;
+}
+
+.footer {
+  width: 100%;
 }
 
 .result-button {
   padding: 40px 0;
-  width: 100%;
   border: none;
-  background-color: #df2b24;
+  width: 100%;
+  background-color: var(--primary-color);
   font-size: 32px;
-  font-family: "LotteriaChab";
+  font-family: var(--font-family-main);
   color: white;
   cursor: pointer;
 }
 
 .restart-button {
   margin: 20px 0 150px;
-  background-color: #241600;
+  background-color: var(--base-color);
   color: white;
   padding: 25px 40px;
   border: none;
