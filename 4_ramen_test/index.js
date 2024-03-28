@@ -1,8 +1,8 @@
 let userAnswers = {};
 
 const setupQuizEventListeners = () => {
-  document.querySelectorAll(".quiz-question-button").forEach(function (button) {
-    button.addEventListener("click", function () {
+  document.querySelectorAll(".quiz-question-button").forEach((button) => {
+    button.addEventListener("click", () => {
       const questionId = button.getAttribute("data-question");
       const allAnswers = document.querySelectorAll(
         `.quiz-question-button[data-question="${questionId}"]`
@@ -10,7 +10,7 @@ const setupQuizEventListeners = () => {
       const selectedScore = parseInt(button.getAttribute("data-score"));
 
       if (userAnswers[questionId] !== selectedScore) {
-        allAnswers.forEach(function (answer) {
+        allAnswers.forEach((answer) => {
           answer.classList.remove("clicked");
         });
         button.classList.add("clicked");
