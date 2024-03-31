@@ -98,7 +98,7 @@
   color: var(--primary-color);
 }
 
-.quiz-question-button {
+.answer-button {
   display: block;
   width: 500px;
   margin-bottom: 15px;

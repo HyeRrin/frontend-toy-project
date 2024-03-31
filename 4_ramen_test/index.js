@@ -1,36 +1,39 @@
+// 답변 버튼 클릭 이벤트
 let userAnswers = {};
+const answerButtons = document.querySelectorAll(".answer-button");
 
-const setupQuizEventListeners = () => {
-  document.querySelectorAll(".quiz-question-button").forEach((button) => {
-    button.addEventListener("click", () => {
-      const questionId = button.getAttribute("data-question");
-      const allAnswers = document.querySelectorAll(
-        `.quiz-question-button[data-question="${questionId}"]`
-      );
-      const selectedScore = parseInt(button.getAttribute("data-score"));
+answerButtons.forEach((answerButton) => {
+  answerButton.addEventListener("click", () => {
+    // 질문 ID
+    const questionId = answerButton.getAttribute("data-question");
+    // 질문 ID에 해당되는 모든 답변 (총 2개)
+    const answersForOneQuestion = document.querySelectorAll(
+      `.answer-button[data-question="${questionId}"]`
+    );
+    // 사용자가 선택한 답변의 점수 (0점 or 1점)
+    const selectedScore = parseInt(answerButton.getAttribute("data-score"));
 
-      if (userAnswers[questionId] !== selectedScore) {
-        allAnswers.forEach((answer) => {
-          answer.classList.remove("clicked");
-        });
-        button.classList.add("clicked");
+    if (userAnswers[questionId] !== selectedScore) {
+      // 1. 선택한 답변 버튼의 스타일 조작
+      answersForOneQuestion.forEach((answer) => {
+        answer.classList.remove("clicked");
+      });
+      answerButton.classList.add("clicked");
 
-        userAnswers[questionId] = selectedScore;
-
-        console.log(`질문 ${questionId}에 대한 새로운 선택: ${selectedScore}`);
-      }
-    });
+      // 2. 선택한 답변의 점수 저장
+      userAnswers[questionId] = selectedScore;
+    } else {
+      alert("이미 선택된 답변입니다.");
+    }
   });
-};
+});
 
-setupQuizEventListeners();
-
+// 결과 버튼 클릭 이벤트
 const resultButton = document.querySelector(".result-button");
 
-resultButton.addEventListener("click", () => {
+const onClickResultButton = () => {
   const totalQuestions =
-    document.querySelectorAll(".quiz-question-button[data-question]").length /
-    2;
+    document.querySelectorAll(".answer-button[data-question]").length / 2;
   const answeredQuestions = Object.keys(userAnswers).length;
 
   if (answeredQuestions < totalQuestions) {
@@ -42,4 +45,6 @@ resultButton.addEventListener("click", () => {
     }
     location.href = `result.html?score=${totalScore}`;
   }
-});
+};
+
+resultButton.addEventListener("click", onClickResultButton);
