@@ -14,13 +14,13 @@ answerButtons.forEach((answerButton) => {
     const selectedScore = parseInt(answerButton.getAttribute("data-score"));
 
     if (userAnswers[questionId] !== selectedScore) {
-      // 1. 선택한 답변 버튼의 스타일 조작
+      // 선택한 답변 버튼의 스타일 조작
       answersForOneQuestion.forEach((answer) => {
         answer.classList.remove("clicked");
       });
       answerButton.classList.add("clicked");
 
-      // 2. 선택한 답변의 점수 저장
+      // 선택한 답변의 점수 저장
       userAnswers[questionId] = selectedScore;
     } else {
       alert("이미 선택된 답변입니다.");
@@ -32,8 +32,10 @@ answerButtons.forEach((answerButton) => {
 const resultButton = document.querySelector(".result-button");
 
 const onClickResultButton = () => {
+  // 전체 질문의 개수
   const totalQuestions =
     document.querySelectorAll(".answer-button[data-question]").length / 2;
+  // 답변을 마친 질문의 개수
   const answeredQuestions = Object.keys(userAnswers).length;
 
   if (answeredQuestions < totalQuestions) {
