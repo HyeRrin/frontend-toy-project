@@ -31,7 +31,7 @@ answerButtons.forEach((answerButton) => {
 // 결과 버튼 클릭 이벤트
 const resultButton = document.querySelector(".result-button");
 
-const onClickResultButton = () => {
+resultButton.addEventListener("click", () => {
   // 전체 질문의 개수
   const totalQuestions =
     document.querySelectorAll(".answer-button[data-question]").length / 2;
@@ -47,6 +47,4 @@ const onClickResultButton = () => {
     }
     location.href = `result.html?score=${totalScore}`;
   }
-};
-
-resultButton.addEventListener("click", onClickResultButton);
+});
