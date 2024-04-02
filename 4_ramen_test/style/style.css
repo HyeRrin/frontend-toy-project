@@ -44,6 +44,7 @@
   color: var(--primary-color);
   letter-spacing: -0.4px;
 }
+
 .quiz-title {
   text-align: center;
   font-family: var(--font-family-main);
@@ -59,10 +60,10 @@
 
 .quiz-icon-arrow {
   width: 20px;
-  animation: bounce 2s infinite;
+  /* animation: bounce 2s infinite; */
 }
 
-@keyframes bounce {
+/* @keyframes bounce {
   0% {
     transform: translateY(0px);
   }
@@ -72,7 +73,7 @@
   100% {
     transform: translateY(0px);
   }
-}
+} */
 
 .quiz-start-button {
   margin-bottom: 20px;
@@ -82,6 +83,7 @@
   letter-spacing: -0.8px;
 }
 
+/* Question 영역 */
 .quiz-number {
   margin-bottom: 30px;
   font-size: 42px;
@@ -115,16 +117,22 @@
   color: #fff;
 }
 
-/* 결과 화면 */
-.quiz-category-title {
-  margin-bottom: 20px;
-  text-align: center;
-  font-family: var(--font-family-main);
-  font-size: 32px;
-  color: var(--primary-color);
-  letter-spacing: -0.4px;
+.footer {
+  width: 100%;
 }
 
+.result-button {
+  padding: 40px 0;
+  border: none;
+  width: 100%;
+  background-color: var(--primary-color);
+  font-size: 32px;
+  font-family: var(--font-family-main);
+  color: white;
+  cursor: pointer;
+}
+
+/* 결과 화면 */
 .quiz-result-title {
   font-family: var(--font-family-main);
   font-size: 60px;
@@ -147,21 +155,6 @@
   line-height: 28px;
   color: var(--base-color);
   letter-spacing: -1px;
-}
-
-.footer {
-  width: 100%;
-}
-
-.result-button {
-  padding: 40px 0;
-  border: none;
-  width: 100%;
-  background-color: var(--primary-color);
-  font-size: 32px;
-  font-family: var(--font-family-main);
-  color: white;
-  cursor: pointer;
 }
 
 .restart-button {
