@@ -16,11 +16,6 @@
   height: 100vh;
 }
 
-/* 폰트 적용하기 */
-* {
-  letter-spacing: -0.8px;
-}
-
 .main-content,
 .quiz-container {
   display: flex;
