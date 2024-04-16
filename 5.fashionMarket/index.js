@@ -75,7 +75,3 @@ const paintProductList = (products) => {
     productContainer.appendChild(productCard);
   });
 };
-
-// 도전과제 : 다중필터 조건(색상+카테고리) 만족시키도록 수정해보기
-// 도전과제 : 무료배송 필터링 추가해보기
-// 도전과제 : 가격순 정렬 추가해보기
