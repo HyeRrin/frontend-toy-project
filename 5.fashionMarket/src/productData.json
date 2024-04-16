@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "thumbnail": "./src/img/tshirt_pink.png",
+      "name": "플라워 반팔 티셔츠 PINK",
+      "color": "pink",
+      "category": "top",
+      "price": "15000",
+      "isFreeShipment": true
+    },
+    {
+      "id": 2,
+      "thumbnail": "./src/img/skirt_pink.png",
+      "name": "프릴 미디 스커트 PINK",
+      "color": "pink",
+      "category": "bottom",
+      "price": "25000",
+      "isFreeShipment": false
+    },
+    {
+      "id": 3,
+      "thumbnail": "./src/img/pants_blue.png",
+      "name": "트레이닝 팬츠 BLUE",
+      "color": "blue",
+      "category": "bottom",
+      "price": "30000",
+      "isFreeShipment": false
+    },
+    {
+      "id": 4,
+      "thumbnail": "./src/img/shirt_blue.png",
+      "name": "클래식 셔츠 BLUE",
+      "color": "blue",
+      "category": "top",
+      "price": "35000",
+      "isFreeShipment": false
+    },
+    {
+      "id": 5,
+      "thumbnail": "./src/img/pants_pink.png",
+      "name": "트레이닝 팬츠 PINK",
+      "color": "pink",
+      "category": "bottom",
+      "price": "30000",
+      "isFreeShipment": false
+    },
+    {
+      "id": 6,
+      "thumbnail": "./src/img/tshirt_blue.png",
+      "name": "스타 반팔 티셔츠 BLUE",
+      "color": "blue",
+      "category": "top",
+      "price": "15000",
+      "isFreeShipment": true
+    },
+    {
+      "id": 7,
+      "thumbnail": "./src/img/shirt_pink.png",
+      "name": "클래식 셔츠 PINK",
+      "color": "pink",
+      "category": "top",
+      "price": "35000",
+      "isFreeShipment": false
+    },
+    {
+      "id": 8,
+      "thumbnail": "./src/img/skirt_blue.png",
+      "name": "프릴 미디 스커트 BLUE",
+      "color": "blue",
+      "category": "bottom",
+      "price": "25000",
+      "isFreeShipment": false
+    }
+  ]
+}

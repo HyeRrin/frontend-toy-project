@@ -1,0 +1,156 @@
+/* 폰트 Bold */
+@font-face {
+  font-family: "GmarketBold";
+  src: url("../src/font/GmarketSansTTFBold.ttf") format("truetype");
+}
+
+/* 폰트 Medium */
+@font-face {
+  font-family: "GmarketMedium";
+  src: url("../src/font/GmarketSansTTFMedium.ttf") format("truetype");
+}
+
+* {
+  font-family: "GmarketMedium";
+}
+
+/* 제목 */
+.title {
+  padding: 50px 10%;
+  font-family: "GmarketBold";
+  font-size: 40px;
+  letter-spacing: -3px;
+  color: #000000;
+}
+
+.title .highlight {
+  font-size: 54px;
+  color: #00c4bd;
+}
+
+/* 필터링 박스 */
+.filter-container {
+  display: flex;
+  margin-bottom: 50px;
+  padding: 40px 10%;
+  background-color: #f0fbfb;
+}
+
+.filter {
+  margin-right: 40px;
+}
+
+.filter-title {
+  margin-bottom: 15px;
+  font-family: "GmarketBold";
+  font-size: 20px;
+  color: #00c4bd;
+}
+
+.filter-button {
+  margin-right: 6px;
+  margin-bottom: 12px;
+  padding: 12px 20px 12px 6px;
+  border-radius: 20px;
+  border: 1px solid #bdbdbd;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.filter-button-name {
+  display: inline-block;
+  position: relative;
+  padding-left: 40px;
+}
+.filter-button-name::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: translateY(-25%);
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+}
+.filter-button-name.all::before {
+  border: 1px solid #bdbdbd;
+  content: "ALL";
+  font-size: 9px;
+  line-height: 28px;
+}
+.filter-button-name.blue::before {
+  background-color: #00d1ff;
+}
+.filter-button-name.pink::before {
+  background-color: #ffbacf;
+}
+.clicked {
+  border: 1px solid #000000;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 10%;
+}
+
+/* 상품 카드 */
+.product {
+  box-sizing: border-box;
+  padding: 0 10px;
+  margin-bottom: 50px;
+  flex-basis: 25%;
+}
+
+.product-thumbnail {
+  width: 100%;
+}
+
+.product-name {
+  padding-top: 15px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -1px;
+}
+
+.product-price {
+  padding: 10px 0;
+  font-family: "GmarketBold";
+  font-size: 16px;
+  letter-spacing: -0.5px;
+}
+
+.product-badge {
+  display: inline-block;
+  padding: 6px 10px;
+  background-color: #00c4bd;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+/* 푸터 */
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 100px;
+  box-sizing: border-box;
+  padding: 60px 10% 100px;
+  width: 100%;
+  border-top: 1px solid #dcdcdc;
+}
+
+.footer-title {
+  margin-bottom: 10px;
+  font-family: "GmarketBold";
+  color: #585858;
+  letter-spacing: -1px;
+}
+
+.footer-detail {
+  font-size: 14px;
+  line-height: 22px;
+  color: #747474;
+}

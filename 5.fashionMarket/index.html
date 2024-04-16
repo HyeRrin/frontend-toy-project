@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프론트 패션마켓</title>
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="title"><span class="highlight">FrontEnd</span> 패션마켓</h1>
+      <div class="filter-container">
+        <div class="filter">
+          <h3 class="filter-title">카테고리</h3>
+          <div>
+            <button
+              class="filter-button"
+              data-category="cloth"
+              data-detail="top"
+            >
+              <img />
+              <span class="filter-button-name">상의</span>
+            </button>
+            <button
+              class="filter-button"
+              data-category="cloth"
+              data-detail="bottom"
+            >
+              <img />
+              <span class="filter-button-name">하의</span>
+            </button>
+          </div>
+        </div>
+        <div>
+          <h3 class="filter-title">색상</h3>
+          <div>
+            <button
+              class="filter-button"
+              data-category="color"
+              data-detail="blue"
+            >
+              <span class="filter-button-name blue">하늘색</span>
+            </button>
+            <button
+              class="filter-button"
+              data-category="color"
+              data-detail="pink"
+            >
+              <span class="filter-button-name pink">분홍색</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-container"></div>
+
+      <footer class="footer">
+        <div>
+          <p class="footer-title">고객센터 0000-0000</p>
+          <p class="footer-detail">
+            운영시간 평일 09:00 ~ 18:00 (토, 일, 공휴일 후무)
+          </p>
+          <p class="footer-detail">점심시간 12:00 ~ 13:00</p>
+        </div>
+      </footer>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
