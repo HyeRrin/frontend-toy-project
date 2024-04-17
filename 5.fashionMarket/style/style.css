@@ -16,7 +16,7 @@
 
 /* 제목 */
 .title {
-  padding: 50px 10%;
+  padding: 60px 10%;
   font-family: "GmarketBold";
   font-size: 40px;
   letter-spacing: -3px;
@@ -31,9 +31,10 @@
 /* 필터링 박스 */
 .filter-container {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   padding: 40px 10%;
-  background-color: #f0fbfb;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .filter {
@@ -43,19 +44,18 @@
 .filter-title {
   margin-bottom: 15px;
   font-family: "GmarketBold";
-  font-size: 20px;
-  color: #00c4bd;
+  font-size: 18px;
 }
 
 .filter-button {
   margin-right: 6px;
-  margin-bottom: 12px;
   padding: 12px 20px 12px 6px;
   border-radius: 20px;
-  border: 1px solid #bdbdbd;
+  border: 1px solid #d7d7d7;
   background-color: #ffffff;
   cursor: pointer;
 }
+
 .filter-button-name {
   display: inline-block;
   position: relative;
@@ -69,24 +69,32 @@
   transform: translateY(-25%);
   width: 30px;
   height: 30px;
-  border: 1px solid #ffffff;
   border-radius: 30px;
 }
-.filter-button-name.all::before {
-  border: 1px solid #bdbdbd;
-  content: "ALL";
-  font-size: 9px;
-  line-height: 28px;
+.filter-button-name.top::before {
+  background-image: url(../src/img/icon_top.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #d7d7d7;
+}
+.filter-button-name.bottom::before {
+  background-image: url(../src/img/icon_bottom.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #d7d7d7;
 }
 .filter-button-name.blue::before {
   background-color: #00d1ff;
+  border: 1px solid #ffffff;
 }
 .filter-button-name.pink::before {
   background-color: #ffbacf;
+  border: 1px solid #ffffff;
 }
+
 .clicked {
-  border: 1px solid #000000;
-  background-color: #000000;
+  border: 1px solid #00c4bd;
+  background-color: #00c4bd;
   color: #ffffff;
 }
 
@@ -139,7 +147,8 @@
   box-sizing: border-box;
   padding: 60px 10% 100px;
   width: 100%;
-  border-top: 1px solid #dcdcdc;
+  /* border-top: 1px solid #dcdcdc; */
+  background-color: #fbfbfb;
 }
 
 .footer-title {
