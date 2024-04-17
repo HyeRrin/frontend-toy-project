@@ -10,9 +10,11 @@
   </head>
   <body>
     <main>
-      <h1 class="title"><span class="highlight">FrontEnd</span> 패션마켓</h1>
+      <header>
+        <h1 class="title"><span class="highlight">FrontEnd</span> 패션마켓</h1>
+      </header>
       <div class="filter-container">
-        <div class="filter">
+        <section class="filter">
           <h3 class="filter-title">카테고리</h3>
           <div>
             <button
@@ -20,7 +22,6 @@
               data-category="cloth"
               data-detail="top"
             >
-              <img />
               <span class="filter-button-name top">상의</span>
             </button>
             <button
@@ -28,12 +29,11 @@
               data-category="cloth"
               data-detail="bottom"
             >
-              <img />
               <span class="filter-button-name bottom">하의</span>
             </button>
           </div>
-        </div>
-        <div>
+        </section>
+        <section>
           <h3 class="filter-title">색상</h3>
           <div>
             <button
@@ -51,11 +51,9 @@
               <span class="filter-button-name pink">분홍색</span>
             </button>
           </div>
-        </div>
+        </section>
       </div>
-
       <div class="product-container"></div>
-
       <footer class="footer">
         <div>
           <p class="footer-title">고객센터 0000-0000</p>
