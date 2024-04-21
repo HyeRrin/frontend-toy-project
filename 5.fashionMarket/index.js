@@ -48,22 +48,29 @@ const paintProductList = (products) => {
   for (let i = 0; i < products.length; i++) {
     const product = products[i];
 
+    // 상품 카드 컨테이너 생성
+    const productCard = document.createElement("div");
+    productCard.classList.add("product");
+
+    // 썸네일 생성
     const productThumbnail = document.createElement("img");
     productThumbnail.src = product.thumbnail;
     productThumbnail.classList.add("product-thumbnail");
 
+    // 상품명 생성
     const productName = document.createElement("p");
     productName.textContent = product.name;
     productName.classList.add("product-name");
 
+    // 가격 생성
     const productPrice = document.createElement("p");
     productPrice.textContent = `${Number(product.price).toLocaleString()}원`;
     productPrice.classList.add("product-price");
 
-    const productCard = document.createElement("div");
-    productCard.classList.add("product");
+    // 상품 카드에 썸네일, 상품명, 가격 추가
     productCard.append(productThumbnail, productName, productPrice);
 
+    // 배송 뱃지 추가
     if (product.isFreeShipping) {
       const productBadge = document.createElement("span");
       productBadge.textContent = "무료배송";
