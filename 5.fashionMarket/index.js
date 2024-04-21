@@ -2,15 +2,12 @@ const productContainer = document.querySelector(".product-container");
 let productList = [];
 
 const fetchProductData = async () => {
-  try {
-    const response = await fetch("./src/productData.json");
-    const data = await response.json();
-    productList = data.products;
+  await fetch("./src/productData.json")
+    .then((response) => response.json())
+    .then((data) => (productList = data.products))
+    .catch((error) => console.error("상품 데이터 불러오기 실패! : ", error));
 
-    paintProductList(productList);
-  } catch (error) {
-    console.error("제품 데이터를 가져오는 데 실패했어요.", error);
-  }
+  paintProductList(productList);
 };
 
 fetchProductData();
@@ -48,7 +45,9 @@ filterButtons.forEach((filterButton) => {
 });
 
 const paintProductList = (products) => {
-  products.forEach((product) => {
+  for (let i = 0; i < products.length; i++) {
+    const product = products[i];
+
     const productThumbnail = document.createElement("img");
     productThumbnail.src = product.thumbnail;
     productThumbnail.classList.add("product-thumbnail");
@@ -73,5 +72,5 @@ const paintProductList = (products) => {
     }
 
     productContainer.appendChild(productCard);
-  });
+  }
 };
