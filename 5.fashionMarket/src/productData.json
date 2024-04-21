@@ -7,7 +7,7 @@
       "color": "pink",
       "category": "top",
       "price": "15000",
-      "isFreeShipment": true
+      "isFreeShipping": true
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "color": "pink",
       "category": "bottom",
       "price": "25000",
-      "isFreeShipment": false
+      "isFreeShipping": false
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "color": "blue",
       "category": "bottom",
       "price": "30000",
-      "isFreeShipment": false
+      "isFreeShipping": false
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "color": "blue",
       "category": "top",
       "price": "35000",
-      "isFreeShipment": false
+      "isFreeShipping": false
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "color": "pink",
       "category": "bottom",
       "price": "30000",
-      "isFreeShipment": false
+      "isFreeShipping": false
     },
     {
       "id": 6,
@@ -52,7 +52,7 @@
       "color": "blue",
       "category": "top",
       "price": "15000",
-      "isFreeShipment": true
+      "isFreeShipping": true
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "color": "pink",
       "category": "top",
       "price": "35000",
-      "isFreeShipment": false
+      "isFreeShipping": false
     },
     {
       "id": 8,
@@ -70,7 +70,7 @@
       "color": "blue",
       "category": "bottom",
       "price": "25000",
-      "isFreeShipment": false
+      "isFreeShipping": false
     }
   ]
 }

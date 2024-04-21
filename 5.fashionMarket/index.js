@@ -65,7 +65,7 @@ const paintProductList = (products) => {
     productCard.classList.add("product");
     productCard.append(productThumbnail, productName, productPrice);
 
-    if (product.isFreeShipment) {
+    if (product.isFreeShipping) {
       const productBadge = document.createElement("span");
       productBadge.textContent = "무료배송";
       productBadge.classList.add("product-badge");
