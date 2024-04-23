@@ -1,15 +1,15 @@
-/* 폰트 Bold */
+/* 폰트 */
 @font-face {
   font-family: "GmarketBold";
   src: url("../src/font/GmarketSansTTFBold.ttf") format("truetype");
 }
 
-/* 폰트 Medium */
 @font-face {
   font-family: "GmarketMedium";
   src: url("../src/font/GmarketSansTTFMedium.ttf") format("truetype");
 }
 
+/* 전체 */
 * {
   font-family: "GmarketMedium";
 }
