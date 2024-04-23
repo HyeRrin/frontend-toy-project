@@ -49,7 +49,7 @@ const paintProductList = (products) => {
     const product = products[i];
 
     // 상품 카드 컨테이너 생성
-    const productCard = document.createElement("div");
+    const productCard = document.createElement("li");
     productCard.classList.add("product");
 
     // 썸네일 생성
