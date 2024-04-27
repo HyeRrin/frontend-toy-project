@@ -63,7 +63,6 @@
 }
 
 .filter-button-name {
-  display: inline-block;
   position: relative;
   padding-left: 40px;
 }
@@ -72,7 +71,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  transform: translateY(-25%);
+  transform: translateY(-30%);
   width: 30px;
   height: 30px;
   border-radius: 30px;
