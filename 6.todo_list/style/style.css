@@ -1,0 +1,104 @@
+/* 폰트 */
+@font-face {
+  font-family: "GmarketLight";
+  src: url("../src/font/GmarketSansTTFLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GmarketMedium";
+  src: url("../src/font/GmarketSansTTFMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GmarketBold";
+  src: url("../src/font/GmarketSansTTFBold.ttf") format("truetype");
+}
+
+#app {
+  background-color: #fcfbf7;
+}
+
+.logo {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  width: 105px;
+}
+
+.title {
+  margin-bottom: 15px;
+  font-family: "GmarketBold";
+  font-size: 40px;
+  color: #487aff;
+  letter-spacing: -2px;
+}
+
+.highlight {
+  color: #ff6936;
+}
+
+.title-sub {
+  font-family: "GmarketLight";
+  font-size: 20px;
+  color: #487aff;
+  letter-spacing: -1px;
+}
+
+#form {
+  margin: 60px 0;
+}
+
+.input {
+  padding: 0 10px;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #b2b2b2;
+  background-color: #fcfbf7;
+  font-size: 20px;
+}
+.input::placeholder {
+  color: #b2b2b2;
+}
+.input:focus {
+  outline: 1px solid transparent;
+}
+
+.add-button {
+  padding: 0px 40px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #ff6936;
+  cursor: pointer;
+}
+.add-button:hover {
+  background-color: #487aff;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.list-detail {
+  flex: 8;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  border-radius: 20px;
+  height: 80px;
+  font-size: 18px;
+  background-color: #ffffff;
+}
+
+.delete-button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  color: #b2b2b2;
+  cursor: pointer;
+}
