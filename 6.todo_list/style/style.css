@@ -94,11 +94,12 @@
   align-items: center;
   border-radius: 20px;
   height: 80px;
+  background-color: #ffffff;
+  border: 1px solid #e9e9e9;
+  font-family: "GmarketMedium";
   font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.4px;
-  background-color: #ffffff;
-  border: 1px solid #e9e9e9;
 }
 
 .delete-button {
