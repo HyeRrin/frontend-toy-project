@@ -8,8 +8,8 @@ const $second = document.querySelector("#second");
 let setTime = 0;
 let eggTimer;
 
-const BUTTON_ORANGE = "#E76020";
-const BUTTON_GREEN = "#325334";
+const BUTTON_ORANGE = "#FFC132";
+const BUTTON_GREEN = "#223173";
 
 const calcTime = () => {
   $minute.textContent = Math.floor(setTime / (60 * 1000))
