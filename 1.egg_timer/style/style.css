@@ -17,7 +17,7 @@ body {
 .title-container {
   margin-bottom: 34px;
 }
-.title-main {
+.titlㅇe-main {
   margin-bottom: 15px;
   font-size: 60px;
   font-weight: 500;
@@ -29,7 +29,7 @@ body {
   color: #223173;
 }
 
-/* 오른쪽 타이머 영역 (title) */
+/* 오른쪽 타이머 영역 (timer) */
 .timer-container {
   display: flex;
   justify-content: space-between;
