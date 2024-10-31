@@ -34,10 +34,6 @@
   position: absolute;
   top: -15px;
   right: -55px;
-  /* animation: rolypoly 2s infinite; */
-  animation-name: rolypoly;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
   font-size: 70px;
   color: #ff99c1;
 }
@@ -45,18 +41,6 @@
 .title-sub {
   font-size: 48px;
   color: #ff99c1;
-}
-
-@keyframes rolypoly {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(30deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
 }
 
 /* 디데이 입력 카드 */
