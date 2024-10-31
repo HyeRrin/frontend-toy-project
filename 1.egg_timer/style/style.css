@@ -1,4 +1,4 @@
-#app {
+body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,8 +13,7 @@
   margin-right: 100px;
 }
 
-/* 오른쪽 타이머 영역 */
-/* title */
+/* 오른쪽 타이머 영역 (title) */
 .title-container {
   margin-bottom: 34px;
 }
@@ -30,19 +29,7 @@
   color: #223173;
 }
 
-/* timer */
-.button-small {
-  border: 0;
-  width: 235px;
-  height: 55px;
-  background-color: #223173;
-  font-size: 20px;
-  color: white;
-  cursor: pointer;
-}
-.button-small:hover {
-  opacity: 0.7;
-}
+/* 오른쪽 타이머 영역 (title) */
 .timer-container {
   display: flex;
   justify-content: space-between;
@@ -56,7 +43,6 @@
   align-items: center;
   width: 200px;
   height: 180px;
-  background-color: rgba(255, 255, 255, 0.2);
 }
 .timer-time {
   font-size: 80px;
@@ -69,21 +55,9 @@
   color: #223173;
 }
 
-.button-large {
-  width: 235px;
-  height: 110px;
-  border: 0;
-  font-size: 20px;
-  color: white;
-  background-color: #223173;
-  cursor: pointer;
-}
-.button-large:hover {
-  opacity: 0.7;
-}
-
 .button-style {
   border: 0;
+  width: 235px;
   font-size: 20px;
   color: white;
   background-color: #223173;
@@ -91,11 +65,9 @@
 }
 
 .button-small {
-  width: 235px;
   height: 55px;
 }
 
 .button-large {
-  width: 235px;
   height: 110px;
 }

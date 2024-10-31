@@ -2,45 +2,37 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/style.css" />
     <title>달걀 타이머</title>
   </head>
   <body>
-    <main id="app">
-      <img class="img-egg" src="img/egg.png" />
-      <article>
-        <div class="title-container">
-          <h1 class="title-main">맛있는 달걀 삶기</h1>
-          <h2 class="title-sub">나만의 요리 비법, 달걀 타이머</h2>
+    <img class="img-egg" src="img/egg.png" />
+    <div>
+      <div class="title-container">
+        <h1 class="title-main">맛있는 달걀 삶기</h1>
+        <h2 class="title-sub">나만의 요리 비법, 달걀 타이머</h2>
+      </div>
+      <div>
+        <button id="halfBoiled" class="button-style button-small">반숙</button>
+        <button id="fullyBoiled" class="button-style button-small">완숙</button>
+      </div>
+      <div class="timer-container">
+        <div class="timer-box">
+          <p id="minute" class="timer-time">00</p>
+          <p class="timer-info">MINUTE</p>
         </div>
-        <div>
-          <button id="halfBoiled" class="button-style button-small">
-            반숙
-          </button>
-          <button id="fullyBoiled" class="button-style button-small">
-            완숙
-          </button>
+        <p class="timer-time">:</p>
+        <div class="timer-box">
+          <p id="second" class="timer-time">00</p>
+          <p class="timer-info">SECONDS</p>
         </div>
-        <div class="timer-container">
-          <div class="timer-box">
-            <p id="minute" class="timer-time">00</p>
-            <p class="timer-info">MINUTE</p>
-          </div>
-          <span class="timer-time">:</span>
-          <div class="timer-box">
-            <p id="second" class="timer-time">00</p>
-            <p class="timer-info">SECONDS</p>
-          </div>
-        </div>
-        <div>
-          <button id="reset" class="button-style button-large">초기화</button>
-          <button id="start" class="button-style button-large">시작</button>
-        </div>
-      </article>
-    </main>
+      </div>
+      <div>
+        <button id="reset" class="button-style button-large">초기화</button>
+        <button id="start" class="button-style button-large">시작</button>
+      </div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>

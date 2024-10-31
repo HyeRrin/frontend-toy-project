@@ -9,24 +9,19 @@
     <title>2. dday_calculator</title>
   </head>
   <body>
+    <!-- 메인 콘텐츠 -->
     <main id="app">
       <div>
-        <!-- 타이틀 -->
+        <!-- 제목 영역 -->
         <header class="header">
           <h1 class="title-main">우리 만난지 며칠</h1>
           <h2 class="title-sub">커플 디데이 계산기</h2>
         </header>
 
-        <!-- 디데이 입력 카드 -->
+        <!-- 입력 카드 영역 -->
         <article class="container-input">
           <label for="input-date" class="label">처음 만난 날</label>
-          <input
-            type="date"
-            id="input-date"
-            class="input"
-            placeholder="날짜 선택"
-            required
-          />
+          <input type="date" id="input-date" class="input" required />
           <div class="wrapper-input">
             <div>
               <label for="input-name-me" class="label">내 이름</label>
@@ -50,7 +45,7 @@
           <button type="button" class="button-calc">계산하기</button>
         </article>
 
-        <!-- 결과 카드 -->
+        <!-- 결과 카드 영역 -->
         <article class="container-result">
           <div class="container-emoji">
             <div class="box-emoji">
@@ -80,7 +75,7 @@
         </article>
       </div>
 
-      <!-- 하트 계산기 이미지 -->
+      <!-- 계산기 이미지 영역 -->
       <img src="src/img/deco_calculator.png" class="deco-calculator" />
     </main>
     <script src="index.js"></script>

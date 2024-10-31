@@ -1,9 +1,11 @@
+// 입력 카드 요소
 const $input_container = document.querySelector(".container-input");
 const $input_date = document.querySelector("#input-date");
 const $input_name_me = document.querySelector("#input-name-me");
 const $input_name_partner = document.querySelector("#input-name-partner");
 const $button_calc = document.querySelector(".button-calc");
 
+// 결과 카드 요소
 const $result_container = document.querySelector(".container-result");
 const $result_name_me = document.querySelector("#result-name-me");
 const $result_name_partner = document.querySelector("#result-name-partner");
@@ -13,7 +15,7 @@ const $btn_refresh = document.querySelector("#btn-refresh");
 
 const calculateDate = () => {
   if (
-    !$input_date.value.length ||
+    !$input_date.value ||
     !$input_name_me.value ||
     !$input_name_partner.value
   ) {
