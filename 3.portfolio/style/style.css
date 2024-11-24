@@ -92,10 +92,10 @@ intro 섹션
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 100px);
+  height: (100vh - 100px);
 }
 
-.intro-content > .intro-subtitle {
+.intro-subtitle {
   font-size: 32px;
 }
 
@@ -190,7 +190,7 @@ about 섹션
 .carousel-button {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
   width: 50px;
   height: 50px;
   padding: 0;
