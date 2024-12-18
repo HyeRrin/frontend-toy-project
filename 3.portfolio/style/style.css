@@ -92,7 +92,7 @@ intro 섹션
   display: flex;
   justify-content: center;
   align-items: center;
-  height: (100vh - 100px);
+  height: calc(100vh - 100px);
 }
 
 .intro-subtitle {

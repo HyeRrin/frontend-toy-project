@@ -104,8 +104,6 @@
   font-size: 20px;
   color: var(--base-color);
   cursor: pointer;
-  background-color: var(--primary-color);
-  color: #fff;
 }
 .clicked {
   background-color: var(--primary-color);
