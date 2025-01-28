@@ -2,72 +2,64 @@
   "products": [
     {
       "id": 1,
-      "thumbnail": "./src/img/tshirt_pink.png",
-      "name": "플라워 반팔 티셔츠 PINK",
-      "color": "pink",
+      "thumbnail": "./src/img/tshirt_flower.png",
+      "name": "플라워 반팔 티셔츠",
       "category": "top",
       "price": "15000",
       "isFreeShipping": true
     },
     {
       "id": 2,
-      "thumbnail": "./src/img/skirt_pink.png",
-      "name": "프릴 미디 스커트 PINK",
-      "color": "pink",
+      "thumbnail": "./src/img/skirt_short.png",
+      "name": "프릴 미니 스커트",
       "category": "bottom",
       "price": "25000",
       "isFreeShipping": false
     },
     {
       "id": 3,
-      "thumbnail": "./src/img/pants_blue.png",
-      "name": "트레이닝 팬츠 BLUE",
-      "color": "blue",
+      "thumbnail": "./src/img/pants_long.png",
+      "name": "트레이닝 롱 팬츠",
       "category": "bottom",
       "price": "30000",
       "isFreeShipping": false
     },
     {
       "id": 4,
-      "thumbnail": "./src/img/shirt_blue.png",
-      "name": "클래식 셔츠 BLUE",
-      "color": "blue",
+      "thumbnail": "./src/img/shirt_long.png",
+      "name": "클래식 긴팔 셔츠",
       "category": "top",
       "price": "35000",
       "isFreeShipping": false
     },
     {
       "id": 5,
-      "thumbnail": "./src/img/pants_pink.png",
-      "name": "트레이닝 팬츠 PINK",
-      "color": "pink",
+      "thumbnail": "./src/img/pants_short.png",
+      "name": "트레이닝 숏 팬츠",
       "category": "bottom",
       "price": "30000",
       "isFreeShipping": false
     },
     {
       "id": 6,
-      "thumbnail": "./src/img/tshirt_blue.png",
-      "name": "스타 반팔 티셔츠 BLUE",
-      "color": "blue",
+      "thumbnail": "./src/img/tshirt_star.png",
+      "name": "스타 반팔 티셔츠",
       "category": "top",
       "price": "15000",
       "isFreeShipping": true
     },
     {
       "id": 7,
-      "thumbnail": "./src/img/shirt_pink.png",
-      "name": "클래식 셔츠 PINK",
-      "color": "pink",
+      "thumbnail": "./src/img/shirt_short.png",
+      "name": "클래식 반팔 셔츠",
       "category": "top",
       "price": "35000",
       "isFreeShipping": false
     },
     {
       "id": 8,
-      "thumbnail": "./src/img/skirt_blue.png",
-      "name": "프릴 미디 스커트 BLUE",
-      "color": "blue",
+      "thumbnail": "./src/img/skirt_long.png",
+      "name": "프릴 롱 스커트",
       "category": "bottom",
       "price": "25000",
       "isFreeShipping": false

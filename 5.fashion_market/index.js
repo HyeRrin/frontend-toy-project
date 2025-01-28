@@ -34,7 +34,6 @@ filterButtons.forEach((filterButton) => {
       const detailValue = filterButton.getAttribute("data-detail");
 
       const newProductList = productList.filter((product) => {
-        if (categoryValue === "color") return product.color === detailValue;
         if (categoryValue === "cloth") return product.category === detailValue;
       });
 
