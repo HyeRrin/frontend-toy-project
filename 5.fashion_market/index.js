@@ -16,28 +16,19 @@ const filterButtons = document.querySelectorAll(".filter-button");
 
 filterButtons.forEach((filterButton) => {
   filterButton.addEventListener("click", () => {
+    const categoryValue = filterButton.getAttribute("data-category");
     const alreadyClicked = filterButton.classList.contains("clicked");
 
-    filterButton.classList.toggle("clicked");
+    filterButtons.forEach((button) => button.classList.remove("clicked"));
+    productContainer.innerHTML = "";
 
     if (alreadyClicked) {
-      productContainer.innerHTML = "";
       paintProductList(productList);
     } else {
-      filterButtons.forEach((button) => {
-        button.classList.remove("clicked");
-      });
-
       filterButton.classList.add("clicked");
-
-      const categoryValue = filterButton.getAttribute("data-category");
-      const detailValue = filterButton.getAttribute("data-detail");
-
-      const newProductList = productList.filter((product) => {
-        if (categoryValue === "cloth") return product.category === detailValue;
-      });
-
-      productContainer.innerHTML = "";
+      const newProductList = productList.filter(
+        (product) => product.category === categoryValue
+      );
       paintProductList(newProductList);
     }
   });
