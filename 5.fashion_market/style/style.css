@@ -88,14 +88,6 @@
   background-repeat: no-repeat;
   border: 1px solid #d7d7d7;
 }
-.filter-button-name.blue::before {
-  background-color: #00d1ff;
-  border: 1px solid #ffffff;
-}
-.filter-button-name.pink::before {
-  background-color: #ffbacf;
-  border: 1px solid #ffffff;
-}
 
 /* 상품 리스트 */
 .product-container {
