@@ -1,1 +1,3 @@
-# 문법을 넘어 프론트엔드 개발 프로젝트
+# frontend-toy-project
+
+2023.10 ~ing
